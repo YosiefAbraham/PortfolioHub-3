@@ -35,8 +35,8 @@ export default function ProjectModal({ project, open, onClose }: ProjectModalPro
 
   return (
     <Dialog open={open} onOpenChange={(nextOpen) => { if (!nextOpen) onClose(); }}>
-      <DialogContent className="max-w-4xl max-h-[90vh] p-0 gap-0">
-        <DialogHeader className="px-6 pt-6 pb-4 border-b border-border">
+      <DialogContent className="max-w-4xl max-h-[90vh] p-0 gap-0 flex flex-col">
+        <DialogHeader className="px-6 pt-6 pb-4 border-b border-border shrink-0">
           <div className="flex items-start justify-between gap-4">
             <div className="flex-1 space-y-3">
               <DialogTitle className="text-3xl font-bold" data-testid={`text-modal-title-${project.title.toLowerCase().replace(/\s/g, '-')}`}>
@@ -75,73 +75,73 @@ export default function ProjectModal({ project, open, onClose }: ProjectModalPro
           </div>
         </DialogHeader>
 
-        <ScrollArea className="flex-1 px-6 py-6" data-testid="scroll-project-details">
-          <div className="space-y-8 pb-6">
-            {project.images && project.images.length > 0 && (
-              <div className="space-y-4">
-                <h3 className="text-xl font-semibold">Project Gallery</h3>
-                <div className="grid gap-4">
-                  {project.images.map((image, index) => (
-                    <div
-                      key={index}
-                      className="aspect-video rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 border border-card-border overflow-hidden"
-                      data-testid={`img-project-${index}`}
-                    >
-                      <div className="w-full h-full flex items-center justify-center">
-                        <div className="text-4xl font-bold text-primary/30">
-                          Image {index + 1}
+        <ScrollArea className="flex-1 overflow-auto" data-testid="scroll-project-details">
+          <div className="px-6 py-6 space-y-8">
+              {project.images && project.images.length > 0 && (
+                <div className="space-y-4">
+                  <h3 className="text-xl font-semibold">Project Gallery</h3>
+                  <div className="grid gap-4">
+                    {project.images.map((image, index) => (
+                      <div
+                        key={index}
+                        className="aspect-video rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 border border-card-border overflow-hidden"
+                        data-testid={`img-project-${index}`}
+                      >
+                        <div className="w-full h-full flex items-center justify-center">
+                          <div className="text-4xl font-bold text-primary/30">
+                            Image {index + 1}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
-            )}
+              )}
 
-            {project.longDescription && (
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold">About This Project</h3>
-                <p className="text-base leading-relaxed" data-testid="text-modal-long-description">
-                  {project.longDescription}
-                </p>
-              </div>
-            )}
+              {project.longDescription && (
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold">About This Project</h3>
+                  <p className="text-base leading-relaxed" data-testid="text-modal-long-description">
+                    {project.longDescription}
+                  </p>
+                </div>
+              )}
 
-            {project.features && project.features.length > 0 && (
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold">Key Features</h3>
-                <ul className="space-y-2">
-                  {project.features.map((feature, index) => (
-                    <li
-                      key={index}
-                      className="flex items-start gap-3"
-                      data-testid={`text-feature-${index}`}
-                    >
-                      <span className="text-primary font-bold mt-1">•</span>
-                      <span className="text-base leading-relaxed flex-1">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
+              {project.features && project.features.length > 0 && (
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold">Key Features</h3>
+                  <ul className="space-y-2">
+                    {project.features.map((feature, index) => (
+                      <li
+                        key={index}
+                        className="flex items-start gap-3"
+                        data-testid={`text-feature-${index}`}
+                      >
+                        <span className="text-primary font-bold mt-1">•</span>
+                        <span className="text-base leading-relaxed flex-1">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
 
-            {project.challenges && (
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold">Technical Challenges</h3>
-                <p className="text-base leading-relaxed" data-testid="text-modal-challenges">
-                  {project.challenges}
-                </p>
-              </div>
-            )}
+              {project.challenges && (
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold">Technical Challenges</h3>
+                  <p className="text-base leading-relaxed" data-testid="text-modal-challenges">
+                    {project.challenges}
+                  </p>
+                </div>
+              )}
 
-            {project.outcome && (
-              <div className="space-y-3">
-                <h3 className="text-xl font-semibold">Outcome & Impact</h3>
-                <p className="text-base leading-relaxed" data-testid="text-modal-outcome">
-                  {project.outcome}
-                </p>
-              </div>
-            )}
+              {project.outcome && (
+                <div className="space-y-3">
+                  <h3 className="text-xl font-semibold">Outcome & Impact</h3>
+                  <p className="text-base leading-relaxed" data-testid="text-modal-outcome">
+                    {project.outcome}
+                  </p>
+                </div>
+              )}
           </div>
         </ScrollArea>
       </DialogContent>
