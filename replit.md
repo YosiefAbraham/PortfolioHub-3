@@ -2,7 +2,24 @@
 
 ## Overview
 
-This is a modern, single-page portfolio application built to showcase professional experience, projects, skills, and personal information. The application features a bold minimalist design inspired by contemporary portfolio aesthetics, with a focus on large typography, generous spacing, and a clean visual hierarchy. It's built as a full-stack application with React on the frontend and Express on the backend, though currently functioning primarily as a static portfolio site.
+This is a modern, single-page portfolio application built to showcase Yosief Abraham's professional experience, projects, skills, and personal information. The application features a bold minimalist design inspired by contemporary portfolio aesthetics, with a focus on large typography, generous spacing, and a clean visual hierarchy. It's built as a full-stack application with React on the frontend and Express on the backend, though currently functioning primarily as a static portfolio site.
+
+## Portfolio Owner Information
+
+**Name**: Yosief Abraham  
+**Email**: yabraham.cs@gmail.com  
+**Phone**: +1 (619) 430-8273  
+**Location**: San Diego, Palo Alto, CA (Open to Relocation)  
+**Education**: Stanford University - BS in Civil Engineering & MS in Computer Science (GPA: 3.71, graduating December 2026)
+
+## Content Overview
+
+The portfolio showcases:
+- **4 Professional Experiences**: Roles at Oasiz.Ai (Product Manager), Collide Capital (VC Scout), Morgan Stanley (Trading Analyst), and Stanford Engineering (Lead Researcher)
+- **3 Technical Projects**: FGScholar (college app tracker), BeWell (productivity app), and Generate (mobile app development)
+- **5 Placeholder Class Projects**: Reserved slots for future class project additions
+- **Technical Skills**: Python, JavaScript, TypeScript, C++, React Native, Firebase, and more
+- **Professional Skills**: Product Management, Market Analysis, A/B Testing, Data Analytics, Leadership
 
 ## User Preferences
 

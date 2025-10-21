@@ -4,25 +4,32 @@ import ExperienceCard from "./ExperienceCard";
 export default function ExperienceSection() {
   const experiences = [
     {
-      company: "Tech Innovations Inc",
-      role: "Senior Full Stack Developer",
-      period: "2022 - Present",
-      description: "Leading development of cloud-native applications, architecting scalable microservices, and mentoring a team of 5 developers. Reduced system latency by 40% through performance optimizations.",
-      technologies: ["React", "Node.js", "PostgreSQL", "AWS", "Docker", "Kubernetes"],
+      company: "Oasiz.Ai",
+      role: "Growth Product Manager",
+      period: "August 2025 - Present",
+      description: "Analyzed user feedback and bugs; translated issues into reproducible test cases, and recommended technical fixes and UI optimizations. Led usability testing and outreach on Stanford's campus, leveraging A/B-style experiments to evaluate user flows and drive product adoption.",
+      technologies: ["Product Management", "A/B Testing", "User Research", "UI/UX"],
     },
     {
-      company: "Digital Solutions Co",
-      role: "Full Stack Developer",
-      period: "2020 - 2022",
-      description: "Developed and maintained multiple client-facing web applications. Implemented CI/CD pipelines and improved deployment frequency by 300%.",
-      technologies: ["Vue.js", "Python", "Django", "MongoDB", "Redis"],
+      company: "Collide Capital",
+      role: "Venture Capitalist Senior Scout",
+      period: "September 2024 - Present",
+      description: "Conducted comprehensive market analyses and due diligence on emerging AI technologies, synthesizing insights to inform strategic investment decisions. Produced 4+ comprehensive investment pitches biweekly, incorporating risk analyses and partnership strategies.",
+      technologies: ["Market Analysis", "Due Diligence", "AI Technologies", "Investment Strategy"],
     },
     {
-      company: "StartUp Ventures",
-      role: "Frontend Developer",
-      period: "2018 - 2020",
-      description: "Built responsive web interfaces for early-stage products. Collaborated closely with designers to create pixel-perfect implementations.",
-      technologies: ["JavaScript", "React", "SASS", "Webpack", "Firebase"],
+      company: "Morgan Stanley",
+      role: "Fixed Income Sales and Trading Summer Analyst",
+      period: "June 2025 - August 2025",
+      description: "Conducted in-depth market analysis for Credit, Municipal, and Securitized Product Group desks, synthesizing insights from 50+ primers and director meetings, resulting in 5+ actionable trade recommendations. Crafted and delivered highly technical trade pitch proposals bi-weekly.",
+      technologies: ["Financial Analysis", "Trading", "Market Research", "Credit Products"],
+    },
+    {
+      company: "Stanford University School of Engineering",
+      role: "Lead Engineer Researcher",
+      period: "June 2024 - November 2024",
+      description: "Spearheaded a cross-functional research project on public transit issues for Seamless Bay Area, impacting over 8 million commuters. Leveraged Python and Excel to process tens of millions of data points on vehicle and population movement, using AI to drive unique analytics.",
+      technologies: ["Python", "Excel", "Data Analysis", "AI", "Public Transit"],
     },
   ];
 

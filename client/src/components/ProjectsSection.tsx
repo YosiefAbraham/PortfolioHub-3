@@ -9,133 +9,144 @@ export default function ProjectsSection() {
 
   const projects: ProjectDetail[] = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured e-commerce platform with real-time inventory management and secure payment processing.",
-      technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL", "Tailwind CSS"],
+      title: "FGScholar",
+      description: "A full-stack React Native + Firebase platform enabling first-generation students to track college applications, manage essays, and connect with editors.",
+      technologies: ["React Native", "Firebase", "Google Drive API", "TypeScript", "Real-time Chat"],
       demoUrl: "https://example.com",
       githubUrl: "https://github.com",
       longDescription:
-        "Built a comprehensive e-commerce solution from the ground up, handling everything from product catalog management to secure payment processing. The platform serves thousands of daily users and processes significant transaction volume with high reliability and performance.",
-      images: ["project1-1.jpg", "project1-2.jpg", "project1-3.jpg"],
+        "FGScholar is a comprehensive college application management platform designed specifically for first-generation college students. The platform enables students to track their applications, manage essays via Google Drive integration, and connect with editors through role-based authentication, real-time chat, and notifications.",
+      images: ["fgscholar-1.jpg", "fgscholar-2.jpg", "fgscholar-3.jpg"],
       features: [
-        "Real-time inventory tracking across multiple warehouses with automatic stock alerts",
-        "Integrated payment processing with Stripe supporting multiple currencies",
-        "Advanced search and filtering with faceted navigation and autocomplete",
-        "Responsive design optimized for mobile shopping experience",
-        "Comprehensive admin dashboard with sales analytics and reporting",
-        "Automated email notifications for order confirmations and shipping updates",
+        "College application tracker with deadline management and status updates",
+        "Google Drive API integration for essay management and version control",
+        "Role-based authentication system for students and editors",
+        "Real-time chat functionality for student-editor collaboration",
+        "Push notifications for important deadlines and essay feedback",
+        "Mobile-first design optimized for iOS and Android platforms",
       ],
       challenges:
-        "One of the biggest challenges was implementing real-time inventory updates across multiple warehouses while maintaining data consistency. We solved this using event-driven architecture with Redis pub/sub and careful database transaction management. Another challenge was optimizing the search experience for large product catalogs, which we addressed using Elasticsearch with custom ranking algorithms.",
+        "Integrating Google Drive API with Firebase while maintaining real-time synchronization across devices was complex. We implemented a robust caching strategy and conflict resolution system to handle simultaneous edits. The real-time chat feature required careful optimization to minimize Firebase read/write costs while maintaining responsiveness.",
       outcome:
-        "The platform now handles 10,000+ daily transactions with 99.9% uptime. Customer satisfaction scores improved by 40% compared to the legacy system, and checkout completion rates increased by 25%. The average page load time decreased from 3.2s to 0.8s through optimization efforts.",
+        "Successfully launched to help first-generation students manage their college applications more effectively. The platform streamlines the essay editing process and provides crucial support for students navigating the complex application landscape.",
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates and intelligent task prioritization.",
-      technologies: ["React", "Node.js", "Socket.io", "MongoDB", "OpenAI"],
+      title: "BeWell",
+      description: "CS 247B productivity app utilizing React Native and JavaScript to facilitate dynamic data generation and enhance user experience.",
+      technologies: ["React Native", "JavaScript", "Real-time Analytics", "User Management"],
       demoUrl: "https://example.com",
       githubUrl: "https://github.com",
       longDescription:
-        "A powerful project management application designed for distributed teams. The app provides real-time collaboration features, AI-powered task prioritization, and comprehensive project tracking capabilities. Built with scalability in mind to support teams of all sizes.",
-      images: ["project2-1.jpg", "project2-2.jpg"],
+        "BeWell is a student-focused productivity application developed as part of Stanford's CS 247B course. The app combines dynamic data generation with robust user data management to create a personalized productivity experience for students.",
+      images: ["bewell-1.jpg", "bewell-2.jpg"],
       features: [
-        "Real-time collaboration with WebSocket-based updates",
-        "AI-powered task prioritization based on deadlines, dependencies, and team capacity",
-        "Kanban boards with drag-and-drop functionality",
-        "Time tracking and productivity analytics",
-        "Team chat and file sharing integrated into each project",
-        "Custom workflows and automation rules",
+        "Dynamic data generation for personalized productivity insights",
+        "Real-time analytics dashboard for tracking progress and habits",
+        "Customizable settings for individual user preferences",
+        "User data management system with privacy-first architecture",
+        "Interactive visualizations for productivity metrics",
+        "Cross-platform support for iOS and Android devices",
       ],
       challenges:
-        "Managing real-time state synchronization across multiple clients while handling network interruptions was complex. We implemented optimistic updates with conflict resolution and automatic reconnection logic. The AI prioritization system required training on diverse project datasets to provide accurate recommendations.",
+        "Creating a balance between comprehensive data collection and user privacy was a key challenge. We implemented local-first data storage with optional cloud sync to give users control. The real-time analytics required efficient data processing to avoid battery drain on mobile devices.",
       outcome:
-        "Adopted by 500+ teams with over 10,000 active users. Teams reported a 30% increase in project completion rates and 45% reduction in missed deadlines. The AI prioritization feature achieved 85% accuracy in predicting task urgency.",
+        "Developed a fully functional productivity app that enhances student performance through data-driven insights. The application successfully demonstrates the integration of user interaction design with technical implementation for optimal user experience.",
     },
     {
-      title: "Analytics Dashboard",
-      description: "Real-time data visualization platform processing millions of events per day.",
-      technologies: ["Vue.js", "D3.js", "Python", "Redis", "Elasticsearch"],
-      demoUrl: "https://example.com",
-      longDescription:
-        "An enterprise-grade analytics platform that processes and visualizes massive amounts of data in real-time. The dashboard provides customizable widgets, automated reporting, and advanced data exploration tools for business intelligence.",
-      images: ["project3-1.jpg", "project3-2.jpg", "project3-3.jpg"],
-      features: [
-        "Real-time data streaming and visualization with sub-second latency",
-        "Customizable dashboard layouts with drag-and-drop widgets",
-        "Interactive charts using D3.js with drill-down capabilities",
-        "Automated report generation and scheduling",
-        "Advanced filtering and data segmentation",
-        "Export functionality for reports in multiple formats",
-      ],
-      challenges:
-        "Processing millions of events per day while maintaining real-time visualization performance required careful architecture. We used a combination of stream processing with Apache Kafka, caching strategies with Redis, and efficient data aggregation pipelines. Optimizing D3.js visualizations for large datasets was also crucial.",
-      outcome:
-        "Successfully processes 5 million events daily with average query response time under 200ms. Reduced manual reporting time by 80% through automation. The platform enabled data-driven decision making that led to 15% revenue growth for key clients.",
-    },
-    {
-      title: "Social Media App",
-      description: "Mobile-first social networking platform with image sharing and real-time messaging.",
-      technologies: ["React Native", "GraphQL", "AWS", "DynamoDB"],
+      title: "Generate",
+      description: "CS 147L mobile app development project built with React Native, featuring dynamic data generation and customizable user settings.",
+      technologies: ["React Native", "JavaScript", "Mobile Development", "Data Analytics"],
       githubUrl: "https://github.com",
       longDescription:
-        "A modern social networking application designed for mobile users. Features include photo and video sharing, real-time messaging, content discovery through personalized feeds, and social interactions like comments and reactions.",
-      images: ["project4-1.jpg"],
+        "Generate is a student application developed as part of Stanford's CS 147L Mobile App Development course. The project focuses on creating dynamic, interactive mobile experiences while implementing robust user data management and real-time analytics capabilities.",
+      images: ["generate-1.jpg", "generate-2.jpg"],
       features: [
-        "Photo and video sharing with filters and editing tools",
-        "Real-time messaging with typing indicators and read receipts",
-        "Personalized content feed using recommendation algorithms",
-        "Stories feature with 24-hour expiration",
-        "User profiles with customizable themes",
-        "Push notifications for interactions and messages",
+        "Dynamic content generation based on user interactions",
+        "Robust user data management with secure authentication",
+        "Real-time analytics for tracking user engagement",
+        "Customizable settings to personalize the app experience",
+        "Optimized performance for smooth mobile interactions",
+        "Clean, intuitive user interface following mobile design best practices",
       ],
       challenges:
-        "Building a responsive mobile experience that works smoothly on both iOS and Android was challenging. We had to optimize image loading and caching strategies to reduce data usage. The recommendation algorithm needed to balance content freshness with user preferences while avoiding filter bubbles.",
+        "Balancing dynamic data generation with application performance on mobile devices required careful optimization. We implemented efficient state management and memoization strategies to ensure smooth user interactions. Creating an intuitive interface that accommodates complex features while remaining accessible was also challenging.",
       outcome:
-        "Reached 50,000 users within the first 6 months of launch. Average session duration of 25 minutes with 70% daily active user rate. The recommendation system achieved 60% engagement rate on suggested content.",
+        "Successfully delivered a polished mobile application demonstrating proficiency in React Native development and user-centered design. The project showcases the ability to integrate multiple complex features while maintaining excellent application performance.",
     },
     {
-      title: "AI Content Generator",
-      description: "AI-powered content creation tool helping marketers generate high-quality content.",
-      technologies: ["Python", "FastAPI", "React", "TensorFlow", "Docker"],
-      demoUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      title: "Class Project 1",
+      description: "Details coming soon - This project will showcase advanced computer science concepts and practical applications.",
+      technologies: ["To be updated"],
       longDescription:
-        "An innovative AI-powered platform that helps content creators, marketers, and writers generate high-quality written content. The tool uses advanced natural language processing to create blog posts, social media content, product descriptions, and more.",
-      images: ["project5-1.jpg", "project5-2.jpg"],
+        "This class project is currently in development. More details will be added upon completion, including technical implementation details, challenges faced, and outcomes achieved.",
+      images: [],
       features: [
-        "Multiple content types: blog posts, social media, emails, product descriptions",
-        "Tone and style customization to match brand voice",
-        "SEO optimization with keyword integration",
-        "Content templates for common use cases",
-        "Multi-language support for global audiences",
-        "Plagiarism detection and content uniqueness checking",
+        "Feature details will be added upon project completion",
       ],
       challenges:
-        "Fine-tuning the AI models to generate consistently high-quality, relevant content while avoiding generic outputs was the main challenge. We implemented a feedback loop system where users could rate outputs, which helped improve the models over time. Ensuring content originality and avoiding plagiarism required building custom detection algorithms.",
+        "Challenge details will be documented as the project progresses.",
       outcome:
-        "Generated over 100,000 pieces of content for 2,000+ users. Users reported 60% time savings in content creation while maintaining quality standards. The tool achieved a 4.5/5 average quality rating from users.",
+        "Outcome metrics and results will be shared once the project is complete.",
     },
     {
-      title: "Fitness Tracking Platform",
-      description: "Comprehensive fitness tracking application with workout plans and nutrition tracking.",
-      technologies: ["Flutter", "Firebase", "Node.js", "Chart.js"],
-      demoUrl: "https://example.com",
+      title: "Class Project 2",
+      description: "Details coming soon - This project will showcase advanced computer science concepts and practical applications.",
+      technologies: ["To be updated"],
       longDescription:
-        "A complete fitness platform that helps users track their workouts, monitor nutrition, and achieve their health goals. The app provides personalized workout plans, progress tracking, and data visualization to keep users motivated.",
-      images: ["project6-1.jpg", "project6-2.jpg"],
+        "This class project is currently in development. More details will be added upon completion, including technical implementation details, challenges faced, and outcomes achieved.",
+      images: [],
       features: [
-        "Personalized workout plans based on fitness level and goals",
-        "Exercise library with video demonstrations",
-        "Nutrition tracking with barcode scanning",
-        "Progress photos and measurements tracking",
-        "Interactive charts showing fitness trends over time",
-        "Social features for sharing achievements",
+        "Feature details will be added upon project completion",
       ],
       challenges:
-        "Creating an intuitive exercise logging experience that doesn't feel tedious was crucial. We implemented smart suggestions based on workout history and quick-add buttons for common exercises. Syncing data across devices in real-time while working offline required robust conflict resolution.",
+        "Challenge details will be documented as the project progresses.",
       outcome:
-        "Acquired 20,000 active users with 75% retention rate after 3 months. Users logged an average of 12 workouts per month. The platform helped users achieve measurable fitness improvements with 80% reporting progress toward their goals.",
+        "Outcome metrics and results will be shared once the project is complete.",
+    },
+    {
+      title: "Class Project 3",
+      description: "Details coming soon - This project will showcase advanced computer science concepts and practical applications.",
+      technologies: ["To be updated"],
+      longDescription:
+        "This class project is currently in development. More details will be added upon completion, including technical implementation details, challenges faced, and outcomes achieved.",
+      images: [],
+      features: [
+        "Feature details will be added upon project completion",
+      ],
+      challenges:
+        "Challenge details will be documented as the project progresses.",
+      outcome:
+        "Outcome metrics and results will be shared once the project is complete.",
+    },
+    {
+      title: "Class Project 4",
+      description: "Details coming soon - This project will showcase advanced computer science concepts and practical applications.",
+      technologies: ["To be updated"],
+      longDescription:
+        "This class project is currently in development. More details will be added upon completion, including technical implementation details, challenges faced, and outcomes achieved.",
+      images: [],
+      features: [
+        "Feature details will be added upon project completion",
+      ],
+      challenges:
+        "Challenge details will be documented as the project progresses.",
+      outcome:
+        "Outcome metrics and results will be shared once the project is complete.",
+    },
+    {
+      title: "Class Project 5",
+      description: "Details coming soon - This project will showcase advanced computer science concepts and practical applications.",
+      technologies: ["To be updated"],
+      longDescription:
+        "This class project is currently in development. More details will be added upon completion, including technical implementation details, challenges faced, and outcomes achieved.",
+      images: [],
+      features: [
+        "Feature details will be added upon project completion",
+      ],
+      challenges:
+        "Challenge details will be documented as the project progresses.",
+      outcome:
+        "Outcome metrics and results will be shared once the project is complete.",
     },
   ];
 

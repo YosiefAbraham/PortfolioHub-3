@@ -5,24 +5,24 @@ import { Code2, Database, Wrench, Users } from "lucide-react";
 export default function SkillsSection() {
   const skillCategories = [
     {
-      title: "Frontend Development",
+      title: "Programming Languages",
       icon: Code2,
-      skills: ["React", "TypeScript", "Next.js", "Vue.js", "Tailwind CSS", "SASS", "Redux", "GraphQL"],
+      skills: ["Python", "JavaScript", "TypeScript", "C++", "R", "MATLAB"],
     },
     {
-      title: "Backend Development",
+      title: "Frameworks & Tools",
       icon: Database,
-      skills: ["Node.js", "Python", "Django", "FastAPI", "PostgreSQL", "MongoDB", "Redis", "REST APIs"],
+      skills: ["React", "React Native", "Next.js", "Firebase", "Node.js", "Figma", "Replit"],
     },
     {
-      title: "DevOps & Tools",
+      title: "Design & Engineering",
       icon: Wrench,
-      skills: ["Docker", "Kubernetes", "AWS", "CI/CD", "Git", "Webpack", "Vite", "Linux"],
+      skills: ["AutoCAD", "Revit", "MicroStation", "Adobe Premiere Pro", "Adobe Illustrator", "GIS"],
     },
     {
-      title: "Soft Skills",
+      title: "Professional Skills",
       icon: Users,
-      skills: ["Team Leadership", "Agile/Scrum", "Code Review", "Mentoring", "Problem Solving", "Communication"],
+      skills: ["Product Management", "Market Analysis", "A/B Testing", "Data Analytics", "Leadership", "Public Speaking"],
     },
   ];
 
@@ -32,7 +32,7 @@ export default function SkillsSection() {
         <SectionHeader
           number="3"
           title="Skills & Expertise"
-          subtitle="A comprehensive toolkit for building modern applications"
+          subtitle="A comprehensive toolkit spanning engineering, development, and business"
         />
 
         <div className="grid md:grid-cols-2 gap-12 md:gap-16">
