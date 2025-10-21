@@ -15,11 +15,28 @@ This is a modern, single-page portfolio application built to showcase Yosief Abr
 ## Content Overview
 
 The portfolio showcases:
-- **4 Professional Experiences**: Roles at Oasiz.Ai (Product Manager), Collide Capital (VC Scout), Morgan Stanley (Trading Analyst), and Stanford Engineering (Lead Researcher)
+- **6 Professional Experiences**: Roles at Oasiz.Ai (Product Manager), Collide Capital (VC Scout), Morgan Stanley (Trading Analyst), Stanford Engineering (Lead Researcher), and 2 placeholder positions for future experiences
 - **3 Technical Projects**: FGScholar (college app tracker), BeWell (productivity app), and Generate (mobile app development)
 - **5 Placeholder Class Projects**: Reserved slots for future class project additions
 - **Technical Skills**: Python, JavaScript, TypeScript, C++, React Native, Firebase, and more
 - **Professional Skills**: Product Management, Market Analysis, A/B Testing, Data Analytics, Leadership
+
+## Recent Changes (October 21, 2025)
+
+### Modal System Enhancement
+- Created `ExperienceModal` component with scrollable content, multiple image placeholders, and structured sections (Key Responsibilities, Key Achievements)
+- Both `ProjectModal` and `ExperienceModal` now support detailed, scrollable content with images
+- All experience and project cards are now clickable and open their respective modals
+
+### Category Badge System
+- Added semi-translucent category badges to top-right corner of all cards
+- Categories include: PM, VC, Finance, Civil Engineering (experiences), SWE, School (projects)
+- Badges use `bg-primary/90` with `backdrop-blur-sm` for professional appearance
+- Easily customizable for categorizing work by domain (Civil Engineering, PM, SWE, etc.)
+
+### Experience Expansion
+- Expanded from 4 to 6 experience entries (4 detailed + 2 placeholders)
+- Each experience now includes comprehensive modal data with responsibilities, achievements, and images
 
 ## User Preferences
 
