@@ -13,11 +13,15 @@ export default function Footer() {
           </div>
 
           <div className="flex gap-4">
-            <Button variant="ghost" size="icon" data-testid="link-github-footer">
-              <Github className="h-5 w-5" />
+            <Button variant="ghost" size="icon" asChild data-testid="link-github">
+              <a href="https://github.com/YosiefAbraham" target="_blank" rel="noreferrer">
+                <Github className="h-5 w-5" />
+              </a>
             </Button>
-            <Button variant="ghost" size="icon" data-testid="link-linkedin-footer">
-              <Linkedin className="h-5 w-5" />
+            <Button variant="ghost" size="icon" asChild data-testid="link-linkedin">
+              <a href="https://www.linkedin.com/in/yosiefabraham/" target="_blank" rel="noreferrer">
+                <Linkedin className="h-5 w-5" />
+              </a>
             </Button>
             <Button variant="ghost" size="icon" data-testid="link-twitter-footer">
               <Twitter className="h-5 w-5" />

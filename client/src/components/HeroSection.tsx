@@ -36,12 +36,12 @@ export default function HeroSection() {
 
             <div className="flex gap-4">
               <Button variant="ghost" size="icon" asChild data-testid="link-github">
-                <a href="https://github.com" target="_blank" rel="noreferrer">
+                <a href="https://github.com/YosiefAbraham" target="_blank" rel="noreferrer">
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
               <Button variant="ghost" size="icon" asChild data-testid="link-linkedin">
-                <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/yosiefabraham/" target="_blank" rel="noreferrer">
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
