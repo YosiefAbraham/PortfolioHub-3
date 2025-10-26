@@ -44,7 +44,7 @@ export class NeonStorage implements IStorage {
 
   constructor() {
     const sql = neon(process.env.DATABASE_URL!);
-    this.db = drizzle(sql);
+    this.db = drizzle(sql as any);
   }
 
   async getUser(id: string): Promise<User | undefined> {
