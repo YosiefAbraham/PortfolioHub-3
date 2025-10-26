@@ -2,79 +2,108 @@
 @tailwind components;
 @tailwind utilities;
 
-/* LIGHT MODE */
+/* LIGHT MODE - Using Color Board Palette */
 :root {
-  --button-outline: rgba(0,0,0, .10);
-  --badge-outline: rgba(0,0,0, .05);
+  --button-outline: rgba(12, 42, 68, .10);
+  --badge-outline: rgba(12, 42, 68, .05);
 
   /* Automatic computation of border around primary / danger buttons */
   --opaque-button-border-intensity: -8; /* In terms of percentages */
 
   /* Backgrounds applied on top of other backgrounds when hovered/active */
-  --elevate-1: rgba(0,0,0, .03);
-  --elevate-2: rgba(0,0,0, .08);
+  --elevate-1: rgba(12, 42, 68, .03);
+  --elevate-2: rgba(12, 42, 68, .08);
 
-  --background: 0 0% 98%;
+  /* Ivory Whisper (#F0E9DF) - Light background */
+  --background: 30 20% 91%;
 
-  --foreground: 0 0% 15%;
+  /* Dark Mystique (#2A2925) - Dark text */
+  --foreground: 45 8% 12%;
 
-  --border: 0 0% 89%;
+  /* Vintage Cashmere (#ADA696) - Borders */
+  --border: 45 12% 65%;
 
-  --card: 0 0% 100%;
+  /* Ivory Whisper (#F0E9DF) - Cards */
+  --card: 30 20% 91%;
 
-  --card-foreground: 0 0% 15%;
+  /* Dark Mystique (#2A2925) - Card text */
+  --card-foreground: 45 8% 12%;
 
-  --card-border: 0 0% 94%;
+  /* Vintage Cashmere (#ADA696) - Card borders */
+  --card-border: 45 12% 65%;
 
-  --sidebar: 0 0% 96%;
+  /* Ivory Whisper (#F0E9DF) - Sidebar */
+  --sidebar: 30 20% 91%;
 
-  --sidebar-foreground: 0 0% 15%;
+  /* Dark Mystique (#2A2925) - Sidebar text */
+  --sidebar-foreground: 45 8% 12%;
 
-  --sidebar-border: 0 0% 91%;
+  /* Vintage Cashmere (#ADA696) - Sidebar borders */
+  --sidebar-border: 45 12% 65%;
 
-  --sidebar-primary: 142 60% 40%;
+  /* Midnight Elegance (#0C2A44) - Primary */
+  --sidebar-primary: 210 70% 15%;
 
-  --sidebar-primary-foreground: 142 60% 98%;
+  /* Ivory Whisper (#F0E9DF) - Primary foreground */
+  --sidebar-primary-foreground: 30 20% 91%;
 
-  --sidebar-accent: 0 0% 92%;
+  /* Vintage Cashmere (#ADA696) - Sidebar accent */
+  --sidebar-accent: 45 12% 65%;
 
-  --sidebar-accent-foreground: 0 0% 15%;
+  /* Dark Mystique (#2A2925) - Sidebar accent foreground */
+  --sidebar-accent-foreground: 45 8% 12%;
 
-  --sidebar-ring: 142 60% 40%;
+  /* Midnight Elegance (#0C2A44) - Sidebar ring */
+  --sidebar-ring: 210 70% 15%;
 
-  --popover: 0 0% 94%;
+  /* Ivory Whisper (#F0E9DF) - Popover */
+  --popover: 30 20% 91%;
 
-  --popover-foreground: 0 0% 15%;
+  /* Dark Mystique (#2A2925) - Popover foreground */
+  --popover-foreground: 45 8% 12%;
 
-  --popover-border: 0 0% 89%;
+  /* Vintage Cashmere (#ADA696) - Popover border */
+  --popover-border: 45 12% 65%;
 
-  --primary: 142 60% 40%;
+  /* Midnight Elegance (#0C2A44) - Primary (lightened for better contrast) */
+  --primary: 210 70% 25%;
 
-  --primary-foreground: 142 60% 98%;
+  /* Ivory Whisper (#F0E9DF) - Primary foreground */
+  --primary-foreground: 30 20% 91%;
 
-  --secondary: 0 0% 90%;
+  /* Vintage Cashmere (#ADA696) - Secondary */
+  --secondary: 45 12% 65%;
 
-  --secondary-foreground: 0 0% 15%;
+  /* Dark Mystique (#2A2925) - Secondary foreground */
+  --secondary-foreground: 45 8% 12%;
 
-  --muted: 0 2% 88%;
+  /* Vintage Cashmere (#ADA696) - Muted */
+  --muted: 45 12% 65%;
 
-  --muted-foreground: 0 0% 40%;
+  /* Dark Mystique (#2A2925) - Muted foreground */
+  --muted-foreground: 45 8% 40%;
 
-  --accent: 142 8% 86%;
+  /* Vintage Cashmere (#ADA696) - Accent */
+  --accent: 45 12% 65%;
 
-  --accent-foreground: 0 0% 15%;
+  /* Dark Mystique (#2A2925) - Accent foreground */
+  --accent-foreground: 45 8% 12%;
 
   --destructive: 0 84% 35%;
-
   --destructive-foreground: 0 84% 98%;
 
-  --input: 0 0% 80%;
-  --ring: 142 60% 40%;
-  --chart-1: 142 60% 35%;
-  --chart-2: 220 70% 40%;
-  --chart-3: 280 60% 40%;
-  --chart-4: 30 70% 40%;
-  --chart-5: 340 65% 40%;
+  /* Vintage Cashmere (#ADA696) - Input */
+  --input: 45 12% 65%;
+  
+  /* Midnight Elegance (#0C2A44) - Ring (lightened for better contrast) */
+  --ring: 210 70% 25%;
+  
+  /* Chart colors using the palette */
+  --chart-1: 210 70% 15%;
+  --chart-2: 45 12% 65%;
+  --chart-3: 30 20% 91%;
+  --chart-4: 45 8% 12%;
+  --chart-5: 210 70% 25%;
 
   --font-sans: Inter, Open Sans, sans-serif;
   --font-serif: Georgia, serif;
@@ -123,76 +152,105 @@
 }
 
 .dark {
-  --button-outline: rgba(255,255,255, .10);
-  --badge-outline: rgba(255,255,255, .05);
+  --button-outline: rgba(240, 233, 223, .10);
+  --badge-outline: rgba(240, 233, 223, .05);
 
   --opaque-button-border-intensity: 9;  /* In terms of percentages */
 
   /* Backgrounds applied on top of other backgrounds when hovered/active */
-  --elevate-1: rgba(255,255,255, .04);
-  --elevate-2: rgba(255,255,255, .09);
+  --elevate-1: rgba(240, 233, 223, .04);
+  --elevate-2: rgba(240, 233, 223, .09);
 
-  --background: 0 0% 8%;
+  /* Dark Mystique (#2A2925) - Dark background */
+  --background: 45 8% 12%;
 
-  --foreground: 0 0% 95%;
+  /* Ivory Whisper (#F0E9DF) - Light text */
+  --foreground: 30 20% 91%;
 
-  --border: 0 0% 18%;
+  /* Vintage Cashmere (#ADA696) - Borders */
+  --border: 45 12% 45%;
 
-  --card: 0 0% 12%;
+  /* Dark Mystique (#2A2925) - Cards */
+  --card: 45 8% 12%;
 
-  --card-foreground: 0 0% 95%;
+  /* Ivory Whisper (#F0E9DF) - Card text */
+  --card-foreground: 30 20% 91%;
 
-  --card-border: 0 0% 16%;
+  /* Vintage Cashmere (#ADA696) - Card borders */
+  --card-border: 45 12% 45%;
 
-  --sidebar: 0 0% 10%;
+  /* Dark Mystique (#2A2925) - Sidebar */
+  --sidebar: 45 8% 12%;
 
-  --sidebar-foreground: 0 0% 95%;
+  /* Ivory Whisper (#F0E9DF) - Sidebar text */
+  --sidebar-foreground: 30 20% 91%;
 
-  --sidebar-border: 0 0% 14%;
+  /* Vintage Cashmere (#ADA696) - Sidebar borders */
+  --sidebar-border: 45 12% 45%;
 
-  --sidebar-primary: 142 70% 45%;
+  /* Midnight Elegance (#0C2A44) - Primary */
+  --sidebar-primary: 210 70% 20%;
 
-  --sidebar-primary-foreground: 142 70% 98%;
+  /* Ivory Whisper (#F0E9DF) - Primary foreground */
+  --sidebar-primary-foreground: 30 20% 91%;
 
-  --sidebar-accent: 0 0% 15%;
+  /* Vintage Cashmere (#ADA696) - Sidebar accent */
+  --sidebar-accent: 45 12% 20%;
 
-  --sidebar-accent-foreground: 0 0% 95%;
+  /* Ivory Whisper (#F0E9DF) - Sidebar accent foreground */
+  --sidebar-accent-foreground: 30 20% 91%;
 
-  --sidebar-ring: 142 70% 45%;
+  /* Midnight Elegance (#0C2A44) - Sidebar ring */
+  --sidebar-ring: 210 70% 20%;
 
-  --popover: 0 0% 14%;
+  /* Dark Mystique (#2A2925) - Popover */
+  --popover: 45 8% 12%;
 
-  --popover-foreground: 0 0% 95%;
+  /* Ivory Whisper (#F0E9DF) - Popover foreground */
+  --popover-foreground: 30 20% 91%;
 
-  --popover-border: 0 0% 18%;
+  /* Vintage Cashmere (#ADA696) - Popover border */
+  --popover-border: 45 12% 45%;
 
-  --primary: 142 70% 45%;
+  /* Midnight Elegance (#0C2A44) - Primary (lightened for dark mode) */
+  --primary: 210 70% 35%;
 
-  --primary-foreground: 142 70% 98%;
+  /* Ivory Whisper (#F0E9DF) - Primary foreground */
+  --primary-foreground: 30 20% 91%;
 
-  --secondary: 0 0% 18%;
+  /* Vintage Cashmere (#ADA696) - Secondary */
+  --secondary: 45 12% 20%;
 
-  --secondary-foreground: 0 0% 95%;
+  /* Ivory Whisper (#F0E9DF) - Secondary foreground */
+  --secondary-foreground: 30 20% 91%;
 
-  --muted: 142 4% 16%;
+  /* Vintage Cashmere (#ADA696) - Muted */
+  --muted: 45 12% 20%;
 
-  --muted-foreground: 0 0% 65%;
+  /* Ivory Whisper (#F0E9DF) - Muted foreground */
+  --muted-foreground: 30 20% 70%;
 
-  --accent: 142 6% 17%;
+  /* Vintage Cashmere (#ADA696) - Accent */
+  --accent: 45 12% 20%;
 
-  --accent-foreground: 0 0% 95%;
+  /* Ivory Whisper (#F0E9DF) - Accent foreground */
+  --accent-foreground: 30 20% 91%;
 
   --destructive: 0 84% 35%;
-
   --destructive-foreground: 0 84% 98%;
 
-  --input: 0 0% 24%;
-  --ring: 142 70% 45%;
-  --chart-1: 142 70% 55%;
-  --chart-2: 220 70% 60%;
-  --chart-3: 280 60% 60%;
-  --chart-4: 30 70% 60%;
-  --chart-5: 340 65% 60%;
+  /* Vintage Cashmere (#ADA696) - Input */
+  --input: 45 12% 20%;
+  
+  /* Midnight Elegance (#0C2A44) - Ring (lightened for dark mode) */
+  --ring: 210 70% 35%;
+  
+  /* Chart colors using the palette */
+  --chart-1: 210 70% 20%;
+  --chart-2: 45 12% 45%;
+  --chart-3: 30 20% 91%;
+  --chart-4: 45 8% 12%;
+  --chart-5: 210 70% 30%;
 
   --shadow-2xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
   --shadow-xs: 0px 2px 0px 0px hsl(0 0% 0% / 0.00);
@@ -243,6 +301,11 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    background-image: 
+      radial-gradient(circle at 20% 80%, hsl(210 70% 25% / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(45 12% 65% / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, hsl(30 20% 91% / 0.05) 0%, transparent 50%);
+    background-attachment: fixed;
   }
 }
 
@@ -355,5 +418,151 @@
   .border.active-elevate-2:not(.no-active-interaction-elevate)::after,
   .border.hover-elevate:not(.no-hover-interaction-elevate)::after {
     inset: -1px;
+  }
+
+  /* Custom animations and effects */
+  .animate-fade-in {
+    animation: fadeIn 0.6s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(210 70% 25%), hsl(45 12% 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .glass-effect {
+    background: rgba(240, 233, 223, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(173, 166, 150, 0.2);
+    border-radius: 0.75rem;
+  }
+
+  .dark .glass-effect {
+    background: rgba(42, 41, 37, 0.1);
+    border: 1px solid rgba(173, 166, 150, 0.1);
+    border-radius: 0.75rem;
+  }
+
+  /* Consistent border radius for all cards */
+  .card-border-fix {
+    border-radius: 0.75rem;
+    border: 1px solid hsl(var(--card-border));
+  }
+
+  /* Badge positioning fix - inside border, no gap */
+  .badge-corner {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0.75rem;
+    border-bottom-left-radius: 0.75rem;
+    border-bottom-right-radius: 0.75rem;
+  }
+
+  /* Ensure badge sits inside card border */
+  .badge-flush {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 10;
+  }
+
+  .hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+
+  .dark .hover-lift:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      opacity: 0;
+      transform: translateX(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes scaleIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
   }
 }

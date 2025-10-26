@@ -24,15 +24,15 @@ export default function ExperienceCard({
 }: ExperienceCardProps) {
   return (
     <Card 
-      className="p-6 md:p-8 hover-elevate active-elevate-2 transition-all duration-300 cursor-pointer relative" 
+      className="p-6 md:p-8 hover-elevate active-elevate-2 transition-all duration-300 cursor-pointer relative card-border-fix" 
       onClick={onClick}
       data-testid={`card-experience-${company.toLowerCase().replace(/\s/g, '-')}`}
     >
       {category && (
-        <div className="absolute top-0 right-0 z-10">
+        <div className="badge-flush">
           <Badge 
             variant="secondary" 
-            className="rounded-none rounded-bl-lg bg-primary/90 text-primary-foreground backdrop-blur-sm text-xs px-3 py-1 border-0"
+            className="badge-corner bg-primary/90 text-primary-foreground backdrop-blur-sm text-xs px-3 py-1 border-0 shadow-sm"
             data-testid={`badge-category-${category.toLowerCase().replace(/\s/g, '-')}`}
           >
             {category}
