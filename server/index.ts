@@ -1,4 +1,5 @@
 import express, { type Request, Response, NextFunction } from "express";
+import serverless from "serverless-http";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 
@@ -36,7 +37,12 @@ app.use((req, res, next) => {
   next();
 });
 
-(async () => {
+// Initialize the app
+let initializedApp: express.Application | null = null;
+
+async function initializeApp() {
+  if (initializedApp) return initializedApp;
+  
   const server = await registerRoutes(app);
 
   app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
@@ -56,16 +62,28 @@ app.use((req, res, next) => {
     serveStatic(app);
   }
 
-  // ALWAYS serve the app on the port specified in the environment variable PORT
-  // Other ports are firewalled. Default to 5000 if not specified.
-  // this serves both the API and the client.
-  // It is the only port that is not firewalled.
-  const port = parseInt(process.env.PORT || '5000', 10);
-  server.listen({
-    port,
-    host: "0.0.0.0",
-    reusePort: true,
-  }, () => {
-    log(`serving on port ${port}`);
-  });
-})();
+  initializedApp = app;
+  return app;
+}
+
+// For Vercel deployment - export the serverless handler
+export const handler = serverless(async (req: any, res: any) => {
+  const app = await initializeApp();
+  return app(req, res);
+});
+
+// For local development - start the server normally
+if (process.env.NODE_ENV !== "production" || process.env.VERCEL !== "1") {
+  (async () => {
+    const app = await initializeApp();
+    
+    // ALWAYS serve the app on the port specified in the environment variable PORT
+    // Other ports are firewalled. Default to 5000 if not specified.
+    // this serves both the API and the client.
+    // It is the only port that is not firewalled.
+    const port = parseInt(process.env.PORT || '5000', 10);
+    const server = app.listen(port, "0.0.0.0", () => {
+      log(`serving on port ${port}`);
+    });
+  })();
+}

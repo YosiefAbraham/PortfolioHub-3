@@ -7,8 +7,6 @@ interface ProjectCardProps {
   technologies: string[];
   category?: string;
   imageUrl?: string;
-  demoUrl?: string;
-  githubUrl?: string;
   onClick?: () => void;
 }
 

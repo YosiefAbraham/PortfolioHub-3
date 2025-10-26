@@ -81,7 +81,7 @@ export default function ProjectModal({ project, open, onClose }: ProjectModalPro
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold">Project Gallery</h3>
                   <div className="grid gap-4">
-                    {project.images.map((_, index) => (
+                    {project.images.map((image, index) => (
                       <div
                         key={index}
                         className="aspect-video rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 border border-card-border overflow-hidden"

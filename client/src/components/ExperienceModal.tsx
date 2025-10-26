@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/dialog";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Building2 } from "lucide-react";
+import { ExternalLink, Building2 } from "lucide-react";
 import { ScrollArea } from "@/components/ui/scroll-area";
 
 export interface ExperienceDetail {
@@ -73,7 +73,7 @@ export default function ExperienceModal({ experience, open, onClose }: Experienc
                 <div className="space-y-4">
                   <h3 className="text-xl font-semibold">Experience Gallery</h3>
                   <div className="grid gap-4">
-                    {experience.images.map((_, index) => (
+                    {experience.images.map((image, index) => (
                       <div
                         key={index}
                         className="aspect-video rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 border border-card-border overflow-hidden"
