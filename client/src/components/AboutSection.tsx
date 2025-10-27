@@ -1,10 +1,21 @@
 import SectionHeader from "./SectionHeader";
 import { Button } from "@/components/ui/button";
-import { Download, Mail, Github, Linkedin, MapPin, GraduationCap, Briefcase } from "lucide-react";
+import {
+  Download,
+  Mail,
+  Github,
+  Linkedin,
+  MapPin,
+  GraduationCap,
+  Briefcase,
+} from "lucide-react";
 
 export default function AboutSection() {
   return (
-    <section id="about" className="py-20 md:py-32 px-6 md:px-8 relative overflow-hidden">
+    <section
+      id="about"
+      className="py-20 md:py-32 px-6 md:px-8 relative overflow-hidden"
+    >
       {/* Background decorative elements */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute top-10 right-10 w-64 h-64 bg-accent/5 rounded-full blur-3xl"></div>
@@ -29,48 +40,91 @@ export default function AboutSection() {
                   <GraduationCap className="h-5 w-5" />
                   <span className="text-sm font-medium">Stanford</span>
                 </div>
-                <p className="text-xs text-muted-foreground mt-1">Dual Degrees</p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Dual Degrees
+                </p>
               </div>
               <div className="glass-effect rounded-xl p-4 hover-lift">
                 <div className="flex items-center gap-2 text-primary">
                   <Briefcase className="h-5 w-5" />
                   <span className="text-sm font-medium">Morgan Stanley</span>
                 </div>
-                <p className="text-xs text-muted-foreground mt-1">Trading Experience</p>
+                <p className="text-xs text-muted-foreground mt-1">
+                  Trading Experience
+                </p>
               </div>
             </div>
 
             <div className="space-y-6 text-base md:text-lg leading-relaxed">
-              <p data-testid="text-about-p1" className="animate-slide-up" style={{animationDelay: '0.1s'}}>
-                Stanford dual-degree student in 
-                <span className="text-primary font-medium"> Civil Engineering</span> and 
-                <span className="text-primary font-medium"> Computer Science</span>. 
-                Experience in product management, venture capital, and trading at Morgan Stanley.
+              <p
+                data-testid="text-about-p1"
+                className="animate-slide-up"
+                style={{ animationDelay: "0.1s" }}
+              >
+                Stanford dual-degree student in
+                <span className="text-primary font-medium">
+                  {" "}
+                  Civil Engineering
+                </span>{" "}
+                and
+                <span className="text-primary font-medium">
+                  {" "}
+                  Computer Science
+                </span>
+                . Experience in product management, venture capital, and trading
+                at Morgan Stanley.
               </p>
 
-              <p data-testid="text-about-p2" className="animate-slide-up" style={{animationDelay: '0.2s'}}>
-                Full-stack developer specializing in 
-                <span className="text-primary font-medium"> React Native</span>, 
-                <span className="text-primary font-medium"> TypeScript</span>, and 
-                <span className="text-primary font-medium"> Python</span>. 
-                Passionate about building products that drive social innovation and solve real-world problems.
+              <p
+                data-testid="text-about-p2"
+                className="animate-slide-up"
+                style={{ animationDelay: "0.2s" }}
+              >
+                Full-stack developer specializing in
+                <span className="text-primary font-medium"> React Native</span>,
+                <span className="text-primary font-medium"> TypeScript</span>,
+                and
+                <span className="text-primary font-medium"> Python</span>.
+                Passionate about building products that drive social innovation
+                and solve real-world problems.
               </p>
 
-              <p data-testid="text-about-p3" className="animate-slide-up" style={{animationDelay: '0.3s'}}>
-                Stanford Residential Assistant and co-founder of 
-                <span className="text-primary font-medium"> Black Rhythm and Sound</span>. 
-                Interested in entrepreneurship, financial markets, and Arsenal FC.
+              <p
+                data-testid="text-about-p3"
+                className="animate-slide-up"
+                style={{ animationDelay: "0.3s" }}
+              >
+                Stanford Residential Assistant and co-founder of
+                <span className="text-primary font-medium">
+                  {" "}
+                  Black Rhythm and Sound
+                </span>
+                . Interested in entrepreneurship, financial markets, and Arsenal
+                FC.
               </p>
             </div>
 
-            <div className="flex flex-wrap gap-4 pt-4 animate-slide-up" style={{animationDelay: '0.4s'}}>
-              <Button variant="default" asChild data-testid="button-download-resume" className="hover-lift">
+            <div
+              className="flex flex-wrap gap-4 pt-4 animate-slide-up"
+              style={{ animationDelay: "0.4s" }}
+            >
+              <Button
+                variant="default"
+                asChild
+                data-testid="button-download-resume"
+                className="hover-lift"
+              >
                 <a href="/resume.pdf" download>
                   <Download className="h-4 w-4 mr-2" />
                   Download Resume
                 </a>
               </Button>
-              <Button variant="outline" asChild data-testid="button-contact-me" className="hover-lift">
+              <Button
+                variant="outline"
+                asChild
+                data-testid="button-contact-me"
+                className="hover-lift"
+              >
                 <a href="mailto:yabraham.cs@gmail.com">
                   <Mail className="h-4 w-4 mr-2" />
                   Contact Me
@@ -78,32 +132,55 @@ export default function AboutSection() {
               </Button>
             </div>
 
-            <div className="flex gap-4 pt-2 animate-slide-up" style={{animationDelay: '0.5s'}}>
-              <Button variant="ghost" size="icon" asChild data-testid="link-github-about" className="hover-lift">
-                <a href="https://github.com/YosiefAbraham" target="_blank" rel="noreferrer">
+            <div
+              className="flex gap-4 pt-2 animate-slide-up"
+              style={{ animationDelay: "0.5s" }}
+            >
+              <Button
+                variant="ghost"
+                size="icon"
+                asChild
+                data-testid="link-github-about"
+                className="hover-lift"
+              >
+                <a
+                  href="https://github.com/YosiefAbraham"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Github className="h-5 w-5" />
                 </a>
               </Button>
-              <Button variant="ghost" size="icon" asChild data-testid="link-linkedin" className="hover-lift">
-                <a href="https://www.linkedin.com/in/yosiefabraham/" target="_blank" rel="noreferrer">
+              <Button
+                variant="ghost"
+                size="icon"
+                asChild
+                data-testid="link-linkedin"
+                className="hover-lift"
+              >
+                <a
+                  href="https://www.linkedin.com/in/yosiefabraham/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <Linkedin className="h-5 w-5" />
                 </a>
               </Button>
             </div>
           </div>
 
-          <div className="flex justify-center md:justify-end animate-slide-in-right">
-            <div className="w-full max-w-md">
+          <div className="flex justify-center animate-slide-in-right">
+            <div className="w-full max-w-lg">
               <div className="aspect-square rounded-3xl bg-gradient-to-br from-primary/20 via-accent/20 to-primary/10 border border-primary/20 overflow-hidden shadow-2xl hover-lift animate-float">
                 {/* Profile image */}
-                <img 
-                  src="/images/yosief-profile.jpg" 
-                  alt="Yosief Abraham" 
+                <img
+                  src="/images/yosief-profile.jpg"
+                  alt="Yosief Abraham"
                   className="w-full h-full object-cover"
                   onError={(e) => {
                     // Fallback to initials if image fails to load
-                    e.currentTarget.style.display = 'none';
-                    e.currentTarget.nextElementSibling.style.display = 'flex';
+                    e.currentTarget.style.display = "none";
+                    e.currentTarget.nextElementSibling.style.display = "flex";
                   }}
                 />
                 {/* Fallback initials - hidden by default */}
@@ -112,16 +189,19 @@ export default function AboutSection() {
                   <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
                   <div className="absolute top-6 right-6 w-12 h-12 bg-white/20 rounded-full blur-sm"></div>
                   <div className="absolute bottom-6 left-6 w-16 h-16 bg-white/10 rounded-full blur-md"></div>
-                  
+
                   {/* Initials with enhanced styling */}
                   <div className="text-9xl font-bold text-white/90 drop-shadow-lg">
                     YA
                   </div>
                 </div>
               </div>
-              
+
               {/* Additional info card */}
-              <div className="mt-6 glass-effect rounded-xl p-4 animate-scale-in" style={{animationDelay: '0.6s'}}>
+              <div
+                className="mt-6 glass-effect rounded-xl p-4 animate-scale-in"
+                style={{ animationDelay: "0.6s" }}
+              >
                 <div className="flex items-center gap-2 text-sm text-muted-foreground">
                   <MapPin className="h-4 w-4" />
                   <span>Based in Stanford, CA</span>
