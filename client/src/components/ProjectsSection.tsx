@@ -130,6 +130,7 @@ export default function ProjectsSection() {
               description={project.description}
               technologies={project.technologies}
               category={project.category}
+              imageUrl={project.images.length > 0 ? project.images[0] : undefined}
               onClick={() => handleProjectClick(project)}
             />
           ))}

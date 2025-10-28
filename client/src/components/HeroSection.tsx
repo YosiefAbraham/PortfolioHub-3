@@ -272,7 +272,8 @@ export default function HeroSection() {
                   onError={(e) => {
                     // Fallback to initials if image fails to load
                     e.currentTarget.style.display = "none";
-                    const nextElement = e.currentTarget.nextElementSibling as HTMLElement;
+                    const nextElement = e.currentTarget
+                      .nextElementSibling as HTMLElement;
                     if (nextElement) {
                       nextElement.style.display = "flex";
                     }

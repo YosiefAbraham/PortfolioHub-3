@@ -10,37 +10,6 @@ export default function ExperienceSection() {
 
   const experiences: ExperienceDetail[] = [
     {
-      company: "Oasiz.Ai",
-      role: "Growth Product Manager",
-      period: "August 2025 - Present",
-      category: "PM",
-      description:
-        "Led product optimization through user research and A/B testing. Translated user feedback into actionable product improvements.",
-      technologies: [
-        "Product Management",
-        "A/B Testing",
-        "User Research",
-        "UI/UX",
-      ],
-      companyUrl: "https://oasiz.ai",
-      longDescription:
-        "As a Growth Product Manager at Oasiz.Ai, I bridge the gap between users and the engineering team by analyzing feedback, conducting usability testing, and optimizing product flows. My work directly impacts user adoption and product quality through data-driven decision making.",
-      images: [],
-      responsibilities: [
-        "Analyzed user feedback and bug reports to identify patterns and prioritize product improvements",
-        "Translated user issues into reproducible test cases with clear technical specifications",
-        "Recommended technical fixes and UI optimizations to enhance user experience",
-        "Led comprehensive usability testing sessions on Stanford's campus",
-        "Designed and executed A/B-style experiments to evaluate different user flows",
-        "Collaborated with engineering team to implement data-driven product improvements",
-      ],
-      achievements: [
-        "Improved user flow efficiency through systematic A/B testing and iteration",
-        "Established usability testing framework that continues to inform product decisions",
-        "Successfully translated complex user feedback into actionable technical requirements",
-      ],
-    },
-    {
       company: "Collide Capital",
       role: "Venture Capitalist Senior Scout",
       period: "September 2024 - Present",
@@ -69,6 +38,37 @@ export default function ExperienceSection() {
         "Evaluated 50+ potential investments across AI and technology sectors",
         "Contributed to investment decision-making process with detailed market insights",
         "Built strong relationships with emerging AI startup founders and operators",
+      ],
+    },
+    {
+      company: "Oasiz.Ai",
+      role: "Growth Product Manager",
+      period: "August 2025 - Present",
+      category: "PM",
+      description:
+        "Led product optimization through user research and A/B testing. Translated user feedback into actionable product improvements.",
+      technologies: [
+        "Product Management",
+        "A/B Testing",
+        "User Research",
+        "UI/UX",
+      ],
+      companyUrl: "https://oasiz.ai",
+      longDescription:
+        "As a Growth Product Manager at Oasiz.Ai, I bridge the gap between users and the engineering team by analyzing feedback, conducting usability testing, and optimizing product flows. My work directly impacts user adoption and product quality through data-driven decision making.",
+      images: [],
+      responsibilities: [
+        "Analyzed user feedback and bug reports to identify patterns and prioritize product improvements",
+        "Translated user issues into reproducible test cases with clear technical specifications",
+        "Recommended technical fixes and UI optimizations to enhance user experience",
+        "Led comprehensive usability testing sessions on Stanford's campus",
+        "Designed and executed A/B-style experiments to evaluate different user flows",
+        "Collaborated with engineering team to implement data-driven product improvements",
+      ],
+      achievements: [
+        "Improved user flow efficiency through systematic A/B testing and iteration",
+        "Established usability testing framework that continues to inform product decisions",
+        "Successfully translated complex user feedback into actionable technical requirements",
       ],
     },
     {
