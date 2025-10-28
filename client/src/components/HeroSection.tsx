@@ -46,19 +46,11 @@ export default function HeroSection() {
   ];
 
   useEffect(() => {
-    console.log('Setting up carousel interval');
     const interval = setInterval(() => {
-      setCurrentHighlight((prev) => {
-        const next = (prev + 1) % highlights.length;
-        console.log('Carousel rotating from', prev, 'to', next);
-        return next;
-      });
+      setCurrentHighlight((prev) => (prev + 1) % highlights.length);
     }, 2500); // Auto-rotate every 2.5 seconds
 
-    return () => {
-      console.log('Clearing carousel interval');
-      clearInterval(interval);
-    };
+    return () => clearInterval(interval);
   }, []);
 
   const scrollToSection = (id: string) => {
@@ -114,7 +106,7 @@ export default function HeroSection() {
               {/* Experience carousel positioned above buttons */}
               <div className="relative w-full max-w-lg mx-auto overflow-hidden">
                 <div
-                  className="flex transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] transform-gpu"
+                  className="flex transition-transform duration-700 ease-out transform-gpu"
                   style={{
                     transform: `translateX(-${currentHighlight * 100}%)`,
                     willChange: "transform",
