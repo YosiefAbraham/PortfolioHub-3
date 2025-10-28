@@ -4,15 +4,24 @@ import ProjectCard from "./ProjectCard";
 import ProjectModal, { ProjectDetail } from "./ProjectModal";
 
 export default function ProjectsSection() {
-  const [selectedProject, setSelectedProject] = useState<ProjectDetail | null>(null);
+  const [selectedProject, setSelectedProject] = useState<ProjectDetail | null>(
+    null
+  );
   const [modalOpen, setModalOpen] = useState(false);
 
   const projects: ProjectDetail[] = [
     {
       title: "FGScholar",
       category: "SWE",
-      description: "Full-stack platform helping first-generation students track college applications and manage essays with real-time collaboration.",
-      technologies: ["React Native", "Firebase", "Google Drive API", "TypeScript", "Real-time Chat"],
+      description:
+        "Full-stack platform helping first-generation students track college applications and manage essays with real-time collaboration.",
+      technologies: [
+        "React Native",
+        "Firebase",
+        "Google Drive API",
+        "TypeScript",
+        "Real-time Chat",
+      ],
       demoUrl: "https://example.com",
       githubUrl: "https://github.com",
       longDescription:
@@ -34,13 +43,23 @@ export default function ProjectsSection() {
     {
       title: "WeDo",
       category: "School",
-      description: "Student productivity app with dynamic data generation and real-time analytics for personalized user experience.",
-      technologies: ["React Native", "JavaScript", "Real-time Analytics", "User Management"],
+      description:
+        "Student productivity app with dynamic data generation and real-time analytics for personalized user experience.",
+      technologies: [
+        "React Native",
+        "JavaScript",
+        "Real-time Analytics",
+        "User Management",
+      ],
       demoUrl: "https://we-do-yosiefabraham02.replit.app",
       githubUrl: "https://github.com",
       longDescription:
         "WeDo is a student-focused productivity application developed as part of Stanford's CS 247B course. The app combines dynamic data generation with robust user data management to create a personalized productivity experience for students.",
-      images: ["/images/projects/wedo-design-system.png", "/images/projects/wedo-user-research.png", "/images/projects/wedo-comic-strip.png"],
+      images: [
+        "/images/projects/wedo-design-system.png",
+        "/images/projects/wedo-user-research.png",
+        "/images/projects/wedo-comic-strip.png",
+      ],
       features: [
         "Dynamic data generation for personalized productivity insights",
         "Real-time analytics dashboard for tracking progress and habits",
@@ -57,8 +76,14 @@ export default function ProjectsSection() {
     {
       title: "Generate",
       category: "School",
-      description: "Mobile app development project featuring dynamic data generation and customizable user settings.",
-      technologies: ["React Native", "JavaScript", "Mobile Development", "Data Analytics"],
+      description:
+        "Mobile app development project featuring dynamic data generation and customizable user settings.",
+      technologies: [
+        "React Native",
+        "JavaScript",
+        "Mobile Development",
+        "Data Analytics",
+      ],
       githubUrl: "https://github.com",
       longDescription:
         "Generate is a student application developed as part of Stanford's CS 147L Mobile App Development course. The project focuses on creating dynamic, interactive mobile experiences while implementing robust user data management and real-time analytics capabilities.",
@@ -110,7 +135,11 @@ export default function ProjectsSection() {
           ))}
         </div>
 
-        <ProjectModal project={selectedProject} open={modalOpen} onClose={handleCloseModal} />
+        <ProjectModal
+          project={selectedProject}
+          open={modalOpen}
+          onClose={handleCloseModal}
+        />
       </div>
     </section>
   );
