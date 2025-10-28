@@ -48,10 +48,10 @@ export default function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentHighlight((prev) => (prev + 1) % highlights.length);
-    }, 2500); // Slightly slower for smoother feel
+    }, 2500); // Auto-rotate every 2.5 seconds
 
     return () => clearInterval(interval);
-  }, [highlights.length]);
+  }, []);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
