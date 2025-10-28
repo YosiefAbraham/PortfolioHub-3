@@ -25,7 +25,7 @@ export default function ExperienceSection() {
       companyUrl: "https://oasiz.ai",
       longDescription:
         "As a Growth Product Manager at Oasiz.Ai, I bridge the gap between users and the engineering team by analyzing feedback, conducting usability testing, and optimizing product flows. My work directly impacts user adoption and product quality through data-driven decision making.",
-      images: ["oasiz-1.jpg", "oasiz-2.jpg"],
+      images: [],
       responsibilities: [
         "Analyzed user feedback and bug reports to identify patterns and prioritize product improvements",
         "Translated user issues into reproducible test cases with clear technical specifications",
@@ -56,7 +56,7 @@ export default function ExperienceSection() {
       companyUrl: "https://collidecapital.com",
       longDescription:
         "As a Senior Scout at Collide Capital, I identify promising investment opportunities in the AI and technology sectors. My role involves conducting deep market analyses, performing due diligence on startups, and crafting compelling investment pitches for the partnership.",
-      images: ["collide-1.jpg"],
+      images: ["/images/experiences/collide-event.png"],
       responsibilities: [
         "Conducted comprehensive market analyses for emerging AI technology sectors",
         "Performed thorough due diligence on potential investment opportunities",
@@ -120,55 +120,53 @@ export default function ExperienceSection() {
       companyUrl: "https://engineering.stanford.edu",
       longDescription:
         "Led a critical research initiative examining public transit inefficiencies in the San Francisco Bay Area. This cross-functional project combined civil engineering principles with advanced data analytics to identify solutions that could improve transportation for millions of daily commuters.",
-      images: ["stanford-1.jpg", "stanford-2.jpg"],
+      images: [],
       responsibilities: [
-        "Led cross-functional research team studying public transit issues for Seamless Bay Area",
-        "Processed and analyzed tens of millions of data points on vehicle and population movement",
-        "Developed Python-based analytics tools to identify transit inefficiencies",
-        "Applied AI and machine learning techniques to derive unique insights from transit data",
-        "Collaborated with transportation planners and policy makers",
-        "Presented findings and recommendations to stakeholders",
+        "Led cross-functional research team analyzing public transit inefficiencies in the Bay Area",
+        "Used Python and AI to analyze millions of data points from transit systems",
+        "Identified key bottlenecks and inefficiencies affecting 8M+ daily commuters",
+        "Developed data-driven recommendations for improving public transportation",
+        "Collaborated with civil engineering faculty and industry experts",
+        "Presented findings to academic and industry stakeholders",
       ],
       achievements: [
-        "Delivered actionable insights impacting 8+ million Bay Area commuters",
-        "Developed innovative AI-driven analytics methodology for transit data analysis",
-        "Successfully managed cross-functional team to complete comprehensive research project",
+        "Successfully analyzed millions of data points to identify transit inefficiencies",
+        "Developed actionable recommendations for improving transportation for 8M+ commuters",
+        "Led cross-functional team combining engineering and data science expertise",
       ],
     },
     {
-      company: "Experience Placeholder 1",
-      role: "Role Title",
-      period: "TBD",
-      category: "TBD",
+      company: "BART",
+      role: "Engineer Intern",
+      period: "June 2024 - August 2024",
+      category: "Engineering",
       description:
-        "Details coming soon - This experience will showcase professional growth and contributions in a specific domain.",
-      technologies: ["To be updated"],
+        "Built digitized database of water infrastructure and managed consolidation of irrigation water meters across 50 BART stations.",
+      technologies: [
+        "Database Management",
+        "GIS Systems",
+        "Excel",
+        "Data Analysis",
+        "Document Management",
+      ],
+      companyUrl: "https://www.bart.gov",
       longDescription:
-        "This experience placeholder is reserved for future professional experiences. Details will be added as new opportunities arise.",
+        "During my summer internship at BART, I focused on digitizing water infrastructure data and improving engineering processes. I built a comprehensive database system, analyzed thousands of documents, and managed water meter consolidation across the entire BART system.",
       images: [],
       responsibilities: [
-        "Responsibility details will be added upon experience completion",
+        "Built a digitized database of water infrastructure for BART by analyzing thousands of documents",
+        "Created a filing system for documents and annotated hundreds of engineering plans",
+        "Managed the consolidation, discovery, and precise verification of over 200 irrigation water meters",
+        "Used Excel and GIS to enhance infrastructure data accuracy across 50 BART stations",
+        "Optimized engineering plans by providing 1000+ markups and prepping GIS integration",
+        "Implemented a simplified filing system for 50,000+ engineering plans",
+        "Presented findings and recommendations to 100+ BART engineers and stakeholders",
       ],
       achievements: [
-        "Achievement details will be documented as accomplishments are realized",
-      ],
-    },
-    {
-      company: "Experience Placeholder 2",
-      role: "Role Title",
-      period: "TBD",
-      category: "TBD",
-      description:
-        "Details coming soon - This experience will showcase professional growth and contributions in a specific domain.",
-      technologies: ["To be updated"],
-      longDescription:
-        "This experience placeholder is reserved for future professional experiences. Details will be added as new opportunities arise.",
-      images: [],
-      responsibilities: [
-        "Responsibility details will be added upon experience completion",
-      ],
-      achievements: [
-        "Achievement details will be documented as accomplishments are realized",
+        "Successfully digitized water infrastructure database covering 131 miles of BART track",
+        "Improved cross-team collaboration by reducing document retrieval time from minutes to seconds",
+        "Enhanced data accuracy for 100+ engineers through systematic GIS integration",
+        "Delivered comprehensive presentation to 100+ stakeholders on infrastructure improvements",
       ],
     },
   ];
@@ -194,9 +192,9 @@ export default function ExperienceSection() {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
           {experiences.map((exp) => (
-            <ExperienceCard
-              key={exp.company}
-              {...exp}
+            <ExperienceCard 
+              key={exp.company} 
+              {...exp} 
               onClick={() => handleExperienceClick(exp)}
             />
           ))}

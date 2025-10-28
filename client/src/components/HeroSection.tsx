@@ -1,13 +1,33 @@
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Github, Linkedin, Mail, Sparkles } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, Sparkles, Download } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export default function HeroSection() {
+  const [currentHighlight, setCurrentHighlight] = useState(0);
+  
+  const highlights = [
+    { role: "Growth PM", company: "Oasiz.Ai", impact: "Product optimization", status: "current" },
+    { role: "Senior Scout", company: "Collide Capital", impact: "AI investments", status: "current" },
+    { role: "Fixed Income Analyst", company: "Morgan Stanley", impact: "Bond pricing", status: "previous" },
+    { role: "Lead Researcher", company: "Stanford Engineering", impact: "8M+ commuters", status: "previous" },
+    { role: "Engineer Intern", company: "BART", impact: "131 miles infrastructure", status: "previous" },
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentHighlight((prev) => (prev + 1) % highlights.length);
+    }, 2500); // Slightly slower for smoother feel
+
+    return () => clearInterval(interval);
+  }, [highlights.length]);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
   };
+
 
   return (
     <section
@@ -25,8 +45,8 @@ export default function HeroSection() {
       </div>
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
-        <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
-          <div className="space-y-8 animate-slide-in-left">
+        <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-center justify-center">
+          <div className="space-y-8 animate-slide-in-left flex-1 max-w-2xl">
             <div className="space-y-6">
               <div className="flex items-center gap-2 text-sm font-medium text-primary animate-fade-in">
                 <Sparkles className="h-4 w-4" />
@@ -51,6 +71,60 @@ export default function HeroSection() {
                 <span className="text-primary font-medium"> finance</span>, and
                 <span className="text-primary font-medium"> impact</span>
               </p>
+
+              {/* Experience carousel positioned above buttons */}
+              <div className="relative w-full max-w-lg mx-auto overflow-hidden">
+                <div 
+                  className="flex transition-transform duration-700 ease-[cubic-bezier(0.4,0,0.2,1)] transform-gpu"
+                  style={{ 
+                    transform: `translateX(-${currentHighlight * 100}%)`,
+                    willChange: 'transform'
+                  }}
+                >
+                  {highlights.map((highlight, index) => (
+                    <div
+                      key={index}
+                      className="w-full flex-shrink-0 flex justify-center px-2"
+                    >
+                      <div className="glass-effect p-4 rounded-xl w-full max-w-xs transform-gpu"
+                           style={{ 
+                             willChange: 'transform, opacity',
+                             backfaceVisibility: 'hidden'
+                           }}>
+                        <div className="text-xs font-medium text-primary mb-2 text-center">
+                          {highlight.status === "current" ? "Currently" : "Previous"}
+                        </div>
+                        <div className="space-y-1 text-center">
+                          <div className="text-lg font-semibold text-foreground">
+                            <span className="text-primary font-medium">{highlight.role}</span>
+                          </div>
+                          <div className="text-sm text-muted-foreground">
+                            @ {highlight.company}
+                          </div>
+                          <div className="text-xs text-muted-foreground">
+                            {highlight.impact}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+                
+                {/* Compact progress indicators */}
+                <div className="flex justify-center gap-2 mt-4">
+                  {highlights.map((_, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentHighlight(index)}
+                      className={`h-1.5 rounded-full transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] transform-gpu ${
+                        index === currentHighlight 
+                          ? 'bg-primary w-6 shadow-md' 
+                          : 'bg-muted-foreground/30 w-1.5 hover:bg-muted-foreground/60 hover:w-2'
+                      }`}
+                    />
+                  ))}
+                </div>
+              </div>
             </div>
 
             <div
@@ -74,6 +148,18 @@ export default function HeroSection() {
                 className="hover-lift"
               >
                 <a href="mailto:yabraham.cs@gmail.com">Get In Touch</a>
+              </Button>
+              <Button
+                variant="outline"
+                size="lg"
+                asChild
+                data-testid="button-download-resume"
+                className="hover-lift"
+              >
+                <a href="https://docs.google.com/document/d/1qrkmWVUEta5b-qyS79I6P0sNThmXXgZ9SitMVjxot6k/export?format=pdf" target="_blank" rel="noopener noreferrer">
+                  <Download className="h-4 w-4 mr-2" />
+                  Resume
+                </a>
               </Button>
             </div>
 
@@ -125,7 +211,7 @@ export default function HeroSection() {
             </div>
           </div>
 
-          <div className="flex justify-center animate-slide-in-right">
+          <div className="flex justify-center animate-slide-in-right flex-1">
             <div className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem]">
               {/* Profile image container with enhanced styling */}
               <div className="w-full h-full rounded-3xl bg-gradient-to-br from-primary/20 via-accent/20 to-primary/10 border border-primary/20 overflow-hidden shadow-2xl hover-lift animate-float">

@@ -16,7 +16,7 @@ This is a modern, single-page portfolio application built to showcase Yosief Abr
 
 The portfolio showcases:
 - **6 Professional Experiences**: Roles at Oasiz.Ai (Product Manager), Collide Capital (VC Scout), Morgan Stanley (Trading Analyst), Stanford Engineering (Lead Researcher), and 2 placeholder positions for future experiences
-- **3 Technical Projects**: FGScholar (college app tracker), BeWell (productivity app), and Generate (mobile app development)
+- **3 Technical Projects**: FGScholar (college app tracker), WeDo (productivity app), and Generate (mobile app development)
 - **5 Placeholder Class Projects**: Reserved slots for future class project additions
 - **Technical Skills**: Python, JavaScript, TypeScript, C++, React Native, Firebase, and more
 - **Professional Skills**: Product Management, Market Analysis, A/B Testing, Data Analytics, Leadership

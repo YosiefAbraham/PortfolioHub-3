@@ -76,14 +76,14 @@ export default function ExperienceModal({ experience, open, onClose }: Experienc
                     {experience.images.map((image, index) => (
                       <div
                         key={index}
-                        className="aspect-video rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 border border-card-border overflow-hidden"
+                        className="rounded-lg bg-gradient-to-br from-primary/20 to-accent/20 border border-card-border overflow-hidden"
                         data-testid={`img-experience-${index}`}
                       >
-                        <div className="w-full h-full flex items-center justify-center">
-                          <div className="text-4xl font-bold text-primary/30">
-                            Image {index + 1}
-                          </div>
-                        </div>
+                        <img
+                          src={image}
+                          alt={`${experience.company} - Image ${index + 1}`}
+                          className="w-full h-auto object-contain"
+                        />
                       </div>
                     ))}
                   </div>

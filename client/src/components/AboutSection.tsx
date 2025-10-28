@@ -114,7 +114,7 @@ export default function AboutSection() {
                 data-testid="button-download-resume"
                 className="hover-lift"
               >
-                <a href="/resume.pdf" download>
+                <a href="https://docs.google.com/document/d/1qrkmWVUEta5b-qyS79I6P0sNThmXXgZ9SitMVjxot6k/export?format=pdf" target="_blank" rel="noopener noreferrer">
                   <Download className="h-4 w-4 mr-2" />
                   Download Resume
                 </a>

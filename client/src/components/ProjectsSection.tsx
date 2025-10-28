@@ -17,7 +17,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com",
       longDescription:
         "FGScholar is a comprehensive college application management platform designed specifically for first-generation college students. The platform enables students to track their applications, manage essays via Google Drive integration, and connect with editors through role-based authentication, real-time chat, and notifications.",
-      images: ["fgscholar-1.jpg", "fgscholar-2.jpg", "fgscholar-3.jpg"],
+      images: [],
       features: [
         "College application tracker with deadline management and status updates",
         "Google Drive API integration for essay management and version control",
@@ -32,15 +32,15 @@ export default function ProjectsSection() {
         "Successfully launched to help first-generation students manage their college applications more effectively. The platform streamlines the essay editing process and provides crucial support for students navigating the complex application landscape.",
     },
     {
-      title: "BeWell",
+      title: "WeDo",
       category: "School",
       description: "Student productivity app with dynamic data generation and real-time analytics for personalized user experience.",
       technologies: ["React Native", "JavaScript", "Real-time Analytics", "User Management"],
-      demoUrl: "https://example.com",
+      demoUrl: "https://we-do-yosiefabraham02.replit.app",
       githubUrl: "https://github.com",
       longDescription:
-        "BeWell is a student-focused productivity application developed as part of Stanford's CS 247B course. The app combines dynamic data generation with robust user data management to create a personalized productivity experience for students.",
-      images: ["bewell-1.jpg", "bewell-2.jpg"],
+        "WeDo is a student-focused productivity application developed as part of Stanford's CS 247B course. The app combines dynamic data generation with robust user data management to create a personalized productivity experience for students.",
+      images: ["/images/projects/wedo-design-system.png", "/images/projects/wedo-user-research.png", "/images/projects/wedo-comic-strip.png"],
       features: [
         "Dynamic data generation for personalized productivity insights",
         "Real-time analytics dashboard for tracking progress and habits",
@@ -62,7 +62,7 @@ export default function ProjectsSection() {
       githubUrl: "https://github.com",
       longDescription:
         "Generate is a student application developed as part of Stanford's CS 147L Mobile App Development course. The project focuses on creating dynamic, interactive mobile experiences while implementing robust user data management and real-time analytics capabilities.",
-      images: ["generate-1.jpg", "generate-2.jpg"],
+      images: [],
       features: [
         "Dynamic content generation based on user interactions",
         "Robust user data management with secure authentication",
@@ -75,86 +75,6 @@ export default function ProjectsSection() {
         "Balancing dynamic data generation with application performance on mobile devices required careful optimization. We implemented efficient state management and memoization strategies to ensure smooth user interactions. Creating an intuitive interface that accommodates complex features while remaining accessible was also challenging.",
       outcome:
         "Successfully delivered a polished mobile application demonstrating proficiency in React Native development and user-centered design. The project showcases the ability to integrate multiple complex features while maintaining excellent application performance.",
-    },
-    {
-      title: "Class Project 1",
-      category: "School",
-      description: "Details coming soon - This project will showcase advanced computer science concepts and practical applications.",
-      technologies: ["To be updated"],
-      longDescription:
-        "This class project is currently in development. More details will be added upon completion, including technical implementation details, challenges faced, and outcomes achieved.",
-      images: [],
-      features: [
-        "Feature details will be added upon project completion",
-      ],
-      challenges:
-        "Challenge details will be documented as the project progresses.",
-      outcome:
-        "Outcome metrics and results will be shared once the project is complete.",
-    },
-    {
-      title: "Class Project 2",
-      category: "School",
-      description: "Details coming soon - This project will showcase advanced computer science concepts and practical applications.",
-      technologies: ["To be updated"],
-      longDescription:
-        "This class project is currently in development. More details will be added upon completion, including technical implementation details, challenges faced, and outcomes achieved.",
-      images: [],
-      features: [
-        "Feature details will be added upon project completion",
-      ],
-      challenges:
-        "Challenge details will be documented as the project progresses.",
-      outcome:
-        "Outcome metrics and results will be shared once the project is complete.",
-    },
-    {
-      title: "Class Project 3",
-      category: "School",
-      description: "Details coming soon - This project will showcase advanced computer science concepts and practical applications.",
-      technologies: ["To be updated"],
-      longDescription:
-        "This class project is currently in development. More details will be added upon completion, including technical implementation details, challenges faced, and outcomes achieved.",
-      images: [],
-      features: [
-        "Feature details will be added upon project completion",
-      ],
-      challenges:
-        "Challenge details will be documented as the project progresses.",
-      outcome:
-        "Outcome metrics and results will be shared once the project is complete.",
-    },
-    {
-      title: "Class Project 4",
-      category: "School",
-      description: "Details coming soon - This project will showcase advanced computer science concepts and practical applications.",
-      technologies: ["To be updated"],
-      longDescription:
-        "This class project is currently in development. More details will be added upon completion, including technical implementation details, challenges faced, and outcomes achieved.",
-      images: [],
-      features: [
-        "Feature details will be added upon project completion",
-      ],
-      challenges:
-        "Challenge details will be documented as the project progresses.",
-      outcome:
-        "Outcome metrics and results will be shared once the project is complete.",
-    },
-    {
-      title: "Class Project 5",
-      category: "School",
-      description: "Details coming soon - This project will showcase advanced computer science concepts and practical applications.",
-      technologies: ["To be updated"],
-      longDescription:
-        "This class project is currently in development. More details will be added upon completion, including technical implementation details, challenges faced, and outcomes achieved.",
-      images: [],
-      features: [
-        "Feature details will be added upon project completion",
-      ],
-      challenges:
-        "Challenge details will be documented as the project progresses.",
-      outcome:
-        "Outcome metrics and results will be shared once the project is complete.",
     },
   ];
 
