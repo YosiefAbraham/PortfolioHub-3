@@ -23,7 +23,7 @@ export default function ProjectsSection() {
         "Real-time Chat",
       ],
       demoUrl: "https://example.com",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/YosiefAbraham?tab=repositories",
       longDescription:
         "FGScholar is a comprehensive college application management platform designed specifically for first-generation college students. The platform enables students to track their applications, manage essays via Google Drive integration, and connect with editors through role-based authentication, real-time chat, and notifications.",
       images: [],
@@ -52,7 +52,7 @@ export default function ProjectsSection() {
         "User Management",
       ],
       demoUrl: "https://we-do-yosiefabraham02.replit.app",
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/YosiefAbraham?tab=repositories",
       longDescription:
         "WeDo is a student-focused productivity application developed as part of Stanford's CS 247B course. The app combines dynamic data generation with robust user data management to create a personalized productivity experience for students.",
       images: [
@@ -84,7 +84,7 @@ export default function ProjectsSection() {
         "Mobile Development",
         "Data Analytics",
       ],
-      githubUrl: "https://github.com",
+      githubUrl: "https://github.com/YosiefAbraham?tab=repositories",
       longDescription:
         "Generate is a student application developed as part of Stanford's CS 147L Mobile App Development course. The project focuses on creating dynamic, interactive mobile experiences while implementing robust user data management and real-time analytics capabilities.",
       images: [],

@@ -71,7 +71,7 @@ export default function HeroSection() {
   return (
     <section
       id="hero"
-      className="min-h-screen flex items-center justify-center px-6 md:px-8 pt-16 relative overflow-hidden"
+      className="min-h-screen flex items-center justify-center py-20 md:py-32 px-4 sm:px-6 md:px-8 relative overflow-hidden"
     >
       {/* Background decorative elements */}
       <div className="absolute inset-0 -z-10">
@@ -84,8 +84,8 @@ export default function HeroSection() {
       </div>
 
       <div className="max-w-7xl mx-auto w-full relative z-10">
-        <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-center justify-center">
-          <div className="space-y-8 animate-slide-in-left flex-1 max-w-2xl">
+        <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-20 items-center justify-center">
+          <div className="space-y-6 md:space-y-8 animate-slide-in-left flex-1 max-w-2xl">
             <div className="space-y-6">
               <div className="flex items-center gap-2 text-sm font-medium text-primary animate-fade-in">
                 <Sparkles className="h-4 w-4" />
@@ -93,7 +93,7 @@ export default function HeroSection() {
               </div>
 
               <h1
-                className="text-6xl md:text-7xl lg:text-8xl font-bold leading-none"
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold leading-none"
                 data-testid="text-hero-name"
               >
                 <span className="gradient-text">Yosief</span>
@@ -102,7 +102,7 @@ export default function HeroSection() {
               </h1>
 
               <p
-                className="text-lg md:text-xl text-muted-foreground leading-relaxed"
+                className="text-base sm:text-lg md:text-xl text-muted-foreground leading-relaxed"
                 data-testid="text-hero-tagline"
               >
                 Building innovative solutions at the intersection of
@@ -112,7 +112,7 @@ export default function HeroSection() {
               </p>
 
               {/* Experience carousel positioned above buttons */}
-              <div className="relative w-full max-w-lg mx-auto overflow-hidden">
+              <div className="relative w-full max-w-sm sm:max-w-md md:max-w-lg mx-auto overflow-hidden">
                 <div
                   className="flex transition-transform duration-700 ease-out transform-gpu"
                   style={{
@@ -126,7 +126,7 @@ export default function HeroSection() {
                       className="w-full flex-shrink-0 flex justify-center px-2"
                     >
                       <div
-                        className="glass-effect p-4 rounded-xl w-full max-w-xs transform-gpu"
+                        className="glass-effect p-3 sm:p-4 rounded-xl w-full max-w-xs transform-gpu"
                         style={{
                           willChange: "transform, opacity",
                           backfaceVisibility: "hidden",
@@ -173,7 +173,7 @@ export default function HeroSection() {
             </div>
 
             <div
-              className="flex flex-wrap gap-4 animate-slide-up"
+              className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4 animate-slide-up"
               style={{ animationDelay: "0.2s" }}
             >
               <Button
@@ -181,7 +181,7 @@ export default function HeroSection() {
                 size="lg"
                 data-testid="button-view-work"
                 onClick={() => scrollToSection("projects")}
-                className="hover-lift"
+                className="hover-lift w-full sm:w-auto"
               >
                 View My Work
               </Button>
@@ -190,7 +190,7 @@ export default function HeroSection() {
                 size="lg"
                 asChild
                 data-testid="button-contact"
-                className="hover-lift"
+                className="hover-lift w-full sm:w-auto"
               >
                 <a href="mailto:yabraham.cs@gmail.com">Get In Touch</a>
               </Button>
@@ -199,7 +199,7 @@ export default function HeroSection() {
                 size="lg"
                 asChild
                 data-testid="button-download-resume"
-                className="hover-lift"
+                className="hover-lift w-full sm:w-auto"
               >
                 <a
                   href="https://docs.google.com/document/d/1qrkmWVUEta5b-qyS79I6P0sNThmXXgZ9SitMVjxot6k/export?format=pdf"
@@ -224,7 +224,7 @@ export default function HeroSection() {
                 className="hover-lift"
               >
                 <a
-                  href="https://github.com/YosiefAbraham"
+                  href="https://github.com/YosiefAbraham?tab=repositories"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -261,7 +261,7 @@ export default function HeroSection() {
           </div>
 
           <div className="flex justify-center animate-slide-in-right flex-1">
-            <div className="relative w-80 h-80 md:w-96 md:h-96 lg:w-[28rem] lg:h-[28rem]">
+            <div className="relative w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 lg:w-96 lg:h-96 xl:w-[28rem] xl:h-[28rem]">
               {/* Profile image container with enhanced styling */}
               <div className="w-full h-full rounded-3xl bg-gradient-to-br from-primary/20 via-accent/20 to-primary/10 border border-primary/20 overflow-hidden shadow-2xl hover-lift animate-float">
                 {/* Profile image */}
@@ -287,7 +287,7 @@ export default function HeroSection() {
                   <div className="absolute bottom-4 left-4 w-12 h-12 bg-white/10 rounded-full blur-md"></div>
 
                   {/* Initials with enhanced styling */}
-                  <div className="text-6xl md:text-7xl font-bold text-white/90 drop-shadow-lg">
+                  <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white/90 drop-shadow-lg">
                     YA
                   </div>
                 </div>

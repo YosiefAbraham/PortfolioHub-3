@@ -10,7 +10,7 @@ export default function ProjectModalExample() {
     description: "A full-featured e-commerce platform with real-time inventory management",
     technologies: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
     demoUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    githubUrl: "https://github.com/YosiefAbraham?tab=repositories",
     longDescription:
       "Built a comprehensive e-commerce solution from the ground up, handling everything from product catalog management to secure payment processing. The platform serves thousands of daily users and processes significant transaction volume.",
     images: ["image1.jpg", "image2.jpg", "image3.jpg"],

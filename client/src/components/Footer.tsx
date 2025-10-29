@@ -77,7 +77,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-4">
             <Button variant="ghost" size="icon" asChild data-testid="link-github" className="hover-lift">
-              <a href="https://github.com/YosiefAbraham" target="_blank" rel="noreferrer">
+              <a href="https://github.com/YosiefAbraham?tab=repositories" target="_blank" rel="noreferrer">
                 <Github className="h-5 w-5" />
               </a>
             </Button>

@@ -144,7 +144,7 @@ export default function AboutSection() {
                 className="hover-lift"
               >
                 <a
-                  href="https://github.com/YosiefAbraham"
+                  href="https://github.com/YosiefAbraham?tab=repositories"
                   target="_blank"
                   rel="noreferrer"
                 >

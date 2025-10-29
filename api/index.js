@@ -20,7 +20,9 @@ var init_vite_config = __esm({
     vite_config_default = defineConfig({
       plugins: [
         react(),
-        runtimeErrorOverlay(),
+        // Only include runtime error overlay in development
+        ...process.env.NODE_ENV !== "production" ? [runtimeErrorOverlay()] : [],
+        // Only include Replit-specific plugins in development and Replit environment
         ...process.env.NODE_ENV !== "production" && process.env.REPL_ID !== void 0 ? [
           await import("@replit/vite-plugin-cartographer").then(
             (m) => m.cartographer()

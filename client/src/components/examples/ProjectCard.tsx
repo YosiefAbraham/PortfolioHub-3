@@ -8,7 +8,7 @@ export default function ProjectCardExample() {
         description="A full-featured e-commerce platform with real-time inventory management, payment processing, and advanced analytics."
         technologies={["Next.js", "TypeScript", "Stripe", "Tailwind"]}
         demoUrl="https://example.com"
-        githubUrl="https://github.com"
+        githubUrl="https://github.com/YosiefAbraham?tab=repositories"
       />
     </div>
   );
