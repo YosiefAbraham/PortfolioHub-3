@@ -11,34 +11,88 @@ export default function ProjectsSection() {
 
   const projects: ProjectDetail[] = [
     {
-      title: "FGScholar",
-      category: "SWE",
+      title: "Mathy",
+      category: "UX Design",
       description:
-        "Full-stack platform helping first-generation students track college applications and manage essays with real-time collaboration.",
+        "Award-winning interactive math guide with AI-powered real-time feedback on a digital whiteboard. Runner up for 'Best Overall Project' in Stanford CS 147.",
       technologies: [
-        "React Native",
-        "Firebase",
-        "Google Drive API",
+        "React",
         "TypeScript",
-        "Real-time Chat",
+        "Voice AI",
+        "Digital Whiteboard",
+        "Real-time Analysis",
+        "UX Research",
       ],
-      demoUrl: "https://example.com",
-      githubUrl: "https://github.com/YosiefAbraham?tab=repositories",
+      demoUrl: "https://cs147-final.vercel.app",
+      githubUrl: "https://github.com/YosiefAbraham/cs147-final",
+      videoUrl: "https://www.youtube.com/watch?v=fSI5-tT0GI8",
+      projectUrl:
+        "https://web.stanford.edu/class/cs147/projects/DesigningVoiceAIforEverydayValue/Mathy/",
       longDescription:
-        "FGScholar is a comprehensive college application management platform designed specifically for first-generation college students. The platform enables students to track their applications, manage essays via Google Drive integration, and connect with editors through role-based authentication, real-time chat, and notifications.",
-      images: [],
+        "Mathy is an award-winning interactive math guide developed as part of Stanford's CS 147 course, winning 'Best Overall Project.' The application works alongside students on a digital whiteboard, spotting misconceptions in real-time and providing personalized support through AI-powered feedback and adaptive questioning. The project features a fully AI-generated concept video and comprehensive documentation of the entire UX design process from needfinding through final implementation. View the complete project journey including needfinding, POVs, HMWs, concept videos, usability testing, prototypes, and heuristic evaluations at https://web.stanford.edu/class/cs147/projects/DesigningVoiceAIforEverydayValue/Mathy/",
+      images: [
+        "/images/projects/mathy-home-page.png",
+        "/images/projects/mathy-empathy-map.png",
+        "/images/projects/mathy-final-prototype.png",
+        "/images/projects/mathy-low-fidelity.png",
+        "/images/projects/mathy-award.png",
+      ],
       features: [
-        "College application tracker with deadline management and status updates",
-        "Google Drive API integration for essay management and version control",
-        "Role-based authentication system for students and editors",
-        "Real-time chat functionality for student-editor collaboration",
-        "Push notifications for important deadlines and essay feedback",
-        "Mobile-first design optimized for iOS and Android platforms",
+        "Real-time misconception detection that identifies errors as students work through problems",
+        "Smart annotations with explanations and corrections directly on the digital whiteboard",
+        "Voice-enabled Q&A system for natural interaction while solving problems",
+        "Adaptive follow-up questions tailored to individual student progress and understanding",
+        "Interactive digital whiteboard interface optimized for math problem-solving",
+        "Fully AI-generated concept video showcasing innovative storytelling",
+        "Comprehensive UX design process: needfinding, empathy mapping, POVs, HMWs, sketching, usability testing, medium-fi and high-fi prototypes, heuristic evaluation",
+        "Complete project documentation available at Stanford CS 147 course website",
       ],
       challenges:
-        "Integrating Google Drive API with Firebase while maintaining real-time synchronization across devices was complex. We implemented a robust caching strategy and conflict resolution system to handle simultaneous edits. The real-time chat feature required careful optimization to minimize Firebase read/write costs while maintaining responsiveness.",
+        "Creating an AI system that could accurately identify mathematical misconceptions in real-time while maintaining a natural, supportive learning environment was the core challenge. Through extensive needfinding and empathy mapping with students, we discovered key pain points around one-on-one learning support and real-time feedback. We conducted multiple rounds of usability testing to balance immediate feedback with allowing students to think independently. The voice AI integration required careful design to feel helpful rather than intrusive, and the whiteboard interface needed to support fluid mathematical notation while enabling precise error detection. Iterating from low-fidelity sketches to high-fidelity prototypes while incorporating heuristic evaluation feedback was crucial to the final design.",
       outcome:
-        "Successfully launched to help first-generation students manage their college applications more effectively. The platform streamlines the essay editing process and provides crucial support for students navigating the complex application landscape.",
+        "Successfully developed a functional prototype that earned 'Best Overall Project' recognition in Stanford CS 147 with Professor James Landay. The project demonstrates innovative approaches to AI-assisted math learning and showcases comprehensive UX design skills from needfinding and user research through concept development, prototyping, heuristic evaluation, and final implementation. Mathy represents a new paradigm for interactive educational technology that adapts to individual learning needs. The complete design journey, including all research, testing, and iteration phases, is documented at the Stanford CS 147 project showcase.",
+    },
+    {
+      title: "Soundwave",
+      category: "Product Design",
+      description:
+        "Cloud-based collaborative audio studio for podcast teams with real-time editing and transcript-based workflow. CS 177 class project.",
+      technologies: [
+        "React",
+        "WebRTC",
+        "Web Audio API",
+        "Real-time Collaboration",
+        "Speech-to-Text",
+        "Product Management",
+      ],
+      demoUrl: "https://soundwave.bolt.host",
+      videoUrl:
+        "https://drive.google.com/file/d/11YqYZqt3ADkyKg3Nyd6sclhC96xIx70b/view?t=4",
+      projectUrl:
+        "https://highercommonsense.com/wp-content/uploads/2025/12/Soundwave-Final-PRD-1-1.pdf",
+      gtmUrl:
+        "https://highercommonsense.com/human-centered-product-management/project/soundwaves-gtm/",
+      assumptionsUrl:
+        "https://highercommonsense.com/cs247b/soundwave-studios-assumption-testing-pt-2/",
+      marketAnalysisUrl:
+        "https://highercommonsense.com/human-centered-product-management/soundwavestudios-tam-sam-som/",
+      longDescription:
+        "Soundwave is a collaborative audio studio for podcast teams, developed for Stanford's CS 177 (Designing for Impact). The platform brings recording, editing, and versioning into one real-time workspace—like Google Docs for podcasts. Through user research, we identified collaboration and version control as top pain points for teams spending 5-12 hours weekly managing files across disconnected tools. The project includes comprehensive product management: PRD, TAM/SAM/SOM analysis ($11.58B market), Product-Led Growth strategy, and validated assumption testing.",
+      images: ["/images/projects/soundwave-landing.png"],
+      features: [
+        "Real-time collaborative editing with <200ms latency",
+        "AI-powered transcript-based editing for easy text-to-audio workflow",
+        "Timestamped comments anchored to specific audio moments",
+        "Automatic cloud versioning and conflict resolution",
+        "Browser-based recording with Web Audio API",
+        "Complete record-to-export workflow in one platform",
+        "Product-Led Growth strategy with freemium model",
+        "TAM/SAM/SOM analysis: $11.58B addressable market",
+      ],
+      challenges:
+        "Implementing real-time collaboration for 90+ minute audio files while maintaining sub-200ms latency. Building robust conflict resolution for simultaneous edits. Developing GTM strategy balancing Product-Led Growth with team-based adoption. Conducting market sizing and assumption testing with limited resources.",
+      outcome:
+        "Delivered comprehensive product management deliverables: PRD with user personas and Jobs-To-Be-Done framework, functional prototype, GTM strategy with PLG model, TAM/SAM/SOM market analysis, and validated assumption testing. Successfully demonstrates end-to-end skills from user research through technical architecture, business strategy, and go-to-market planning.",
     },
     {
       title: "WeDo",
@@ -73,34 +127,6 @@ export default function ProjectsSection() {
       outcome:
         "Developed a fully functional productivity app that enhances student performance through data-driven insights. The application successfully demonstrates the integration of user interaction design with technical implementation for optimal user experience.",
     },
-    {
-      title: "Generate",
-      category: "School",
-      description:
-        "Mobile app development project featuring dynamic data generation and customizable user settings.",
-      technologies: [
-        "React Native",
-        "JavaScript",
-        "Mobile Development",
-        "Data Analytics",
-      ],
-      githubUrl: "https://github.com/YosiefAbraham?tab=repositories",
-      longDescription:
-        "Generate is a student application developed as part of Stanford's CS 147L Mobile App Development course. The project focuses on creating dynamic, interactive mobile experiences while implementing robust user data management and real-time analytics capabilities.",
-      images: [],
-      features: [
-        "Dynamic content generation based on user interactions",
-        "Robust user data management with secure authentication",
-        "Real-time analytics for tracking user engagement",
-        "Customizable settings to personalize the app experience",
-        "Optimized performance for smooth mobile interactions",
-        "Clean, intuitive user interface following mobile design best practices",
-      ],
-      challenges:
-        "Balancing dynamic data generation with application performance on mobile devices required careful optimization. We implemented efficient state management and memoization strategies to ensure smooth user interactions. Creating an intuitive interface that accommodates complex features while remaining accessible was also challenging.",
-      outcome:
-        "Successfully delivered a polished mobile application demonstrating proficiency in React Native development and user-centered design. The project showcases the ability to integrate multiple complex features while maintaining excellent application performance.",
-    },
   ];
 
   const handleProjectClick = (project: ProjectDetail) => {
@@ -131,7 +157,9 @@ export default function ProjectsSection() {
               technologies={project.technologies}
               category={project.category}
               imageUrl={
-                project.images.length > 0 ? project.images[0] : undefined
+                project.images && project.images.length > 0
+                  ? project.images[0]
+                  : undefined
               }
               onClick={() => handleProjectClick(project)}
             />
