@@ -115,7 +115,8 @@ export default function AboutSection() {
                 className="hover-lift"
               >
                 <a
-                  href="https://docs.google.com/document/d/1qrkmWVUEta5b-qyS79I6P0sNThmXXgZ9SitMVjxot6k/export?format=pdf"
+                  href="/Yosief_Abraham_Resume.pdf"
+                  download="Yosief_Abraham_Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
