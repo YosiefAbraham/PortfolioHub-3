@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Moon, Sun, Menu, X } from "lucide-react";
 
@@ -6,6 +7,7 @@ export default function Navigation() {
   const [theme, setTheme] = useState<"light" | "dark">("dark");
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [location, setLocation] = useLocation();
 
   useEffect(() => {
     const root = document.documentElement;
@@ -28,12 +30,21 @@ export default function Navigation() {
     setTheme(theme === "dark" ? "light" : "dark");
   };
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  const handleNavigation = (id: string) => {
     setIsMobileMenuOpen(false);
+    
+    // If we're on the home page, just scroll
+    if (location === "/") {
+      const element = document.getElementById(id);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      // If we're on a different page, navigate to home first
+      setLocation("/");
+      // Store the target section to scroll to after navigation
+      sessionStorage.setItem("scrollTarget", id);
+    }
   };
 
   const navItems = [
@@ -53,26 +64,42 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-8">
         <div className="flex items-center justify-between h-16">
-          <button
-            onClick={() => scrollToSection("hero")}
+          <Link
+            href="/"
+            onClick={(e) => {
+              // If already on home page, scroll to top
+              if (location === "/") {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: "smooth" });
+              }
+            }}
             className="text-xl font-bold gradient-text hover-lift px-4 py-2 rounded-md transition-all duration-300"
             data-testid="link-home"
           >
             Yosief Abraham
-          </button>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <button
                 key={item.id}
-                onClick={() => scrollToSection(item.id)}
+                onClick={() => handleNavigation(item.id)}
                 className="text-sm font-medium text-muted-foreground hover:text-foreground transition-all duration-300 hover-lift px-3 py-2 rounded-md"
                 data-testid={`link-${item.id}`}
               >
                 {item.label}
               </button>
             ))}
+            {/* Divider */}
+            <div className="h-5 w-px bg-border/50" />
+            <Link 
+              href="/gallery"
+              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-all duration-300 hover-lift px-3 py-2 rounded-md"
+              data-testid="link-gallery"
+            >
+              Gallery
+            </Link>
           </div>
 
           <div className="flex items-center gap-2">
@@ -105,13 +132,23 @@ export default function Navigation() {
               {navItems.map((item) => (
                 <button
                   key={item.id}
-                  onClick={() => scrollToSection(item.id)}
+                  onClick={() => handleNavigation(item.id)}
                   className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-md hover-lift"
                   data-testid={`link-${item.id}-mobile`}
                 >
                   {item.label}
                 </button>
               ))}
+              {/* Divider */}
+              <div className="h-px w-full bg-border/50 my-2" />
+              <Link 
+                href="/gallery"
+                className="block w-full text-left text-sm font-medium text-muted-foreground hover:text-foreground transition-colors py-2 px-3 rounded-md hover-lift"
+                data-testid="link-gallery-mobile"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Gallery
+              </Link>
             </div>
           </div>
         )}

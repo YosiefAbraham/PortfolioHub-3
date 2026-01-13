@@ -22,6 +22,7 @@ export interface ExperienceDetail {
   responsibilities?: string[];
   achievements?: string[];
   companyUrl?: string;
+  logo?: string;
 }
 
 interface ExperienceModalProps {

@@ -12,7 +12,7 @@ export default function SkillsSection() {
     {
       title: "Frameworks & Tools",
       icon: Database,
-      skills: ["React", "React Native", "Next.js", "Firebase", "Node.js", "Figma", "Replit"],
+      skills: ["React", "React Native", "Next.js", "Firebase", "Node.js", "Figma", "Replit", "Bolt.new", "Cursor"],
     },
     {
       title: "Design & Engineering",
