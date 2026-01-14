@@ -99,37 +99,36 @@ export default function ProjectsSection() {
         "Delivered comprehensive product management deliverables: PRD with user personas and Jobs-To-Be-Done framework, functional prototype, GTM strategy with PLG model, TAM/SAM/SOM market analysis, and validated assumption testing. Successfully demonstrates end-to-end skills from user research through technical architecture, business strategy, and go-to-market planning.",
     },
     {
-      title: "WeDo",
-      category: "School",
+      title: "CryptoGuard",
+      category: "Content Moderation & ML",
       description:
-        "Student productivity app with dynamic data generation and real-time analytics for personalized user experience.",
+        "AI-powered content moderation system for detecting cryptocurrency scams on Discord using automated flagging and manual review workflows. Built for Stanford CS 152.",
       technologies: [
-        "React Native",
-        "JavaScript",
-        "Real-time Analytics",
-        "User Management",
+        "Python",
+        "Machine Learning",
+        "Discord Bot",
+        "Naive Bayes Classifier",
+        "VirusTotal API",
+        "NLP",
       ],
-      demoUrl: "https://we-do-yosiefabraham02.replit.app",
       githubUrl: "https://github.com/YosiefAbraham?tab=repositories",
       longDescription:
-        "WeDo is a student-focused productivity application developed as part of Stanford's CS 247B course. The app combines dynamic data generation with robust user data management to create a personalized productivity experience for students.",
-      images: [
-        "/images/projects/wedo-design-system.png",
-        "/images/projects/wedo-user-research.png",
-        "/images/projects/wedo-comic-strip.png",
-      ],
+        "CryptoGuard is a comprehensive content moderation system developed for Stanford's CS 152 course, designed to combat the $3.9 billion annual cryptocurrency scam problem. The project combines automated detection using machine learning with robust manual moderation workflows to identify and prevent blackmail, investment scams, phishing links, and threats of imminent danger. Working with a team of 5, I co-led the technical design and implementation of both user reporting flows and moderator review systems, integrating Multinomial Naive Bayes classifiers, VirusTotal API for suspicious link detection, and regex-based community rules for content filtering.",
+      images: ["/images/projects/cryptoguard-poster.jpg"],
       features: [
-        "Dynamic data generation for personalized productivity insights",
-        "Real-time analytics dashboard for tracking progress and habits",
-        "Customizable settings for individual user preferences",
-        "User data management system with privacy-first architecture",
-        "Interactive visualizations for productivity metrics",
-        "Cross-platform support for iOS and Android devices",
+        "Multinomial Naive Bayes classifier for cryptocurrency scam detection with 83% accuracy",
+        "VirusTotal API integration for automated malicious link detection across multiple antivirus scanners",
+        "Regex-based community rules engine allowing users to specify custom content filters",
+        "Multi-tier user reporting flow with detailed abuse type categorization (blackmail, investment scams, suspicious links, imminent danger)",
+        "Priority-based moderator queue system with automatic action recommendations",
+        "User database tracking previous offenses and probationary periods with three-strikes enforcement",
+        "Automated escalation protocols for severe violations involving law enforcement",
+        "Synthetic training data generation using GPT-4o for diverse scam pattern coverage",
       ],
       challenges:
-        "Creating a balance between comprehensive data collection and user privacy was a key challenge. We implemented local-first data storage with optional cloud sync to give users control. The real-time analytics required efficient data processing to avoid battery drain on mobile devices.",
+        "Building a classifier that could detect sophisticated cryptocurrency scams while minimizing false positives was technically demanding. We trained on 100 synthetically generated scam messages (using GPT-4o) and real Reddit cryptocurrency discussions, achieving moderate performance but discovering our model overestimated urgency as a scam indicator. VirusTotal integration was powerful but had limitations with URL format variations. Designing the moderation workflow required balancing moderator velocity with accuracy—we implemented pre-selected actions based on abuse severity while allowing manual override. The user reporting flow needed to collect detailed context without overwhelming reporters, especially in high-stakes situations like blackmail or physical threats.",
       outcome:
-        "Developed a fully functional productivity app that enhances student performance through data-driven insights. The application successfully demonstrates the integration of user interaction design with technical implementation for optimal user experience.",
+        "Successfully delivered a functional Discord bot with automated and manual moderation capabilities that significantly reduces cryptocurrency scam incidents. The system processes reports through intelligent categorization, provides moderators with comprehensive user history and pre-selected actions, and escalates severe cases to authorities. Our evaluation showed the classifier performs well on diverse scam types while maintaining acceptable false positive rates. The project demonstrates end-to-end skills in ML model development, API integration, user experience design, and content moderation at scale. Presented findings on a professional poster and delivered comprehensive technical documentation for Stanford CS 152.",
     },
     {
       title: "FGScholar",
@@ -167,6 +166,39 @@ export default function ProjectsSection() {
 
   // Additional projects for the "More" section - populate with 3-10 items
   const additionalProjects: ProjectDetail[] = [
+    {
+      title: "WeDo",
+      category: "School",
+      description:
+        "Student productivity app with dynamic data generation and real-time analytics for personalized user experience.",
+      technologies: [
+        "React Native",
+        "JavaScript",
+        "Real-time Analytics",
+        "User Management",
+      ],
+      demoUrl: "https://we-do-yosiefabraham02.replit.app",
+      githubUrl: "https://github.com/YosiefAbraham?tab=repositories",
+      longDescription:
+        "WeDo is a student-focused productivity application developed as part of Stanford's CS 247B course. The app combines dynamic data generation with robust user data management to create a personalized productivity experience for students.",
+      images: [
+        "/images/projects/wedo-design-system.png",
+        "/images/projects/wedo-user-research.png",
+        "/images/projects/wedo-comic-strip.png",
+      ],
+      features: [
+        "Dynamic data generation for personalized productivity insights",
+        "Real-time analytics dashboard for tracking progress and habits",
+        "Customizable settings for individual user preferences",
+        "User data management system with privacy-first architecture",
+        "Interactive visualizations for productivity metrics",
+        "Cross-platform support for iOS and Android devices",
+      ],
+      challenges:
+        "Creating a balance between comprehensive data collection and user privacy was a key challenge. We implemented local-first data storage with optional cloud sync to give users control. The real-time analytics required efficient data processing to avoid battery drain on mobile devices.",
+      outcome:
+        "Developed a fully functional productivity app that enhances student performance through data-driven insights. The application successfully demonstrates the integration of user interaction design with technical implementation for optimal user experience.",
+    },
     {
       title: "Transit Research Dashboard",
       category: "Data Analysis",
