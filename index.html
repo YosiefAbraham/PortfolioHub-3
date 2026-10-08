@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta
+      name="description"
+      content="Yosief Abraham — products first. Dynasty, Mathy, and new work. Stanford CS &amp; civil engineering."
+    />
+    <meta property="og:title" content="Yosief Abraham" />
+    <meta
+      property="og:description"
+      content="Products first. Dynasty, Mathy, and new work."
+    />
+    <title>Yosief Abraham</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=17" />
+  </head>
+  <body>
+    <a class="skip" href="#content">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="wordmark" href="index.html" aria-current="page">Yosief Abraham</a>
+        <nav aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="content" class="wrap">
+      <section class="hero">
+        <h1>I design and build software.</h1>
+        <p>
+          The work I want seen first is what I’ve shipped. Capital, classrooms, and
+          research sit after — context, not the lead.
+        </p>
+      </section>
+
+      <section class="block" id="work" aria-labelledby="work-title">
+        <h2 id="work-title">Selected work</h2>
+        <a class="work" href="https://www.trydynasty.app">
+          <strong>Dynasty</strong>
+          <span>A family tree the whole family writes. trydynasty.app</span>
+        </a>
+        <div class="work-item">
+          <button
+            type="button"
+            class="work work-toggle"
+            aria-expanded="false"
+            aria-controls="pop-mathy"
+            data-pop="pop-mathy"
+          >
+            <strong>Mathy</strong>
+            <span>Stanford CS 147. A product in progress.</span>
+          </button>
+          <div class="pop" id="pop-mathy" hidden>
+            <p>
+              Interactive math guide from Stanford CS 147. No public product URL
+              yet — add one in <code>index.html</code> when it ships.
+            </p>
+            <figure class="pop-figure">
+              <img
+                src="assets/work/mathy-award.jpg"
+                alt="Mathy at the Stanford CS 147 project expo."
+              />
+            </figure>
+          </div>
+        </div>
+        <article class="work">
+          <strong>New work</strong>
+          <span>A third project. Not public yet.</span>
+        </article>
+      </section>
+
+      <section class="block" id="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title">Experience</h2>
+        <p class="hint">A name opens a short note.</p>
+        <div class="exp">
+          <div class="exp-row">
+            <span class="exp-label">Venture</span>
+            <p class="exp-names">
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-collide" data-pop="pop-collide">Collide Capital</button>,
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-advantary" data-pop="pop-advantary">Advantary Partners</button>,
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-embedding" data-pop="pop-embedding">Embedding VC</button>,
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-initio" data-pop="pop-initio">Initio Capital</button>,
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-breakthrough" data-pop="pop-breakthrough">Breakthrough Ventures</button>
+            </p>
+            <div class="pop" id="pop-collide" hidden>
+              <p>Sourcing and diligence with an early-stage fund.</p>
+              <ul class="pop-links">
+                <li><a href="https://collidecap.com">collidecap.com</a></li>
+              </ul>
+              <figure class="pop-figure">
+                <img src="assets/experience/collide/event.jpg" alt="Yosief Abraham at a Collide Capital event." />
+              </figure>
+            </div>
+            <div class="pop" id="pop-advantary" hidden>
+              <p>Time with the firm. Add a note or file in <code>assets/experience/</code> if you want more here.</p>
+              <ul class="pop-links">
+                <li><a href="https://www.advantary.co">advantary.co</a></li>
+              </ul>
+            </div>
+            <div class="pop" id="pop-embedding" hidden>
+              <p>Sourcing and founder calls at an early-stage fund.</p>
+              <ul class="pop-links">
+                <li><a href="https://embedding.vc">embedding.vc</a></li>
+              </ul>
+            </div>
+            <div class="pop" id="pop-initio" hidden>
+              <p>Sourcing and evaluation at an AI-native venture studio.</p>
+              <ul class="pop-links">
+                <li><a href="https://initiocapital.com">initiocapital.com</a></li>
+              </ul>
+            </div>
+            <div class="pop" id="pop-breakthrough" hidden>
+              <p>Student-founder accelerator and fund. Add more files in <code>assets/experience/breakthrough/</code> if you want them here.</p>
+              <ul class="pop-links">
+                <li><a href="https://breakvc.com">breakvc.com</a></li>
+              </ul>
+              <figure class="pop-figure">
+                <img src="assets/experience/breakthrough/flyer.jpg" alt="Breakthrough Ventures accelerator flyer." />
+              </figure>
+            </div>
+          </div>
+
+          <div class="exp-row">
+            <span class="exp-label">Finance</span>
+            <p class="exp-names">
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-ms" data-pop="pop-ms">Morgan Stanley</button>
+            </p>
+            <div class="pop" id="pop-ms" hidden>
+              <p>Summer analyst, fixed income. No work files on disk — the internship was under NDA.</p>
+              <ul class="pop-links">
+                <li><a href="https://www.morganstanley.com">morganstanley.com</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="exp-row">
+            <span class="exp-label">Technology</span>
+            <p class="exp-names">
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-rcre" data-pop="pop-rcre">Resource Commercial Real Estate</button>,
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-oasis" data-pop="pop-oasis">Oasis</button>
+            </p>
+            <div class="pop" id="pop-rcre" hidden>
+              <p>Software work. No public URL or files found on disk — drop one in <code>assets/experience/</code> to attach it.</p>
+            </div>
+            <div class="pop" id="pop-oasis" hidden>
+              <p>Product work on Oasiz, a social arcade.</p>
+              <ul class="pop-links">
+                <li><a href="https://oasiz.ai">oasiz.ai</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="exp-row">
+            <span class="exp-label">Teaching</span>
+            <p class="exp-names">
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-inspirit" data-pop="pop-inspirit">Inspirit AI</button>;
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-cip" data-pop="pop-cip">Head TA, Stanford Code in Place</button>;
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-193t" data-pop="pop-193t">Course Associate, Stanford CS&nbsp;193T</button>
+            </p>
+            <div class="pop" id="pop-inspirit" hidden>
+              <p>AI instruction for high-school scholars, taught by Stanford and MIT instructors.</p>
+              <ul class="pop-links">
+                <li><a href="https://www.inspiritai.com">inspiritai.com</a></li>
+              </ul>
+            </div>
+            <div class="pop" id="pop-cip" hidden>
+              <p>Head teaching assistant for Stanford’s introductory programming course for the world.</p>
+              <ul class="pop-links">
+                <li><a href="https://codeinplace.stanford.edu">codeinplace.stanford.edu</a></li>
+              </ul>
+            </div>
+            <div class="pop" id="pop-193t" hidden>
+              <p>Course associate at Stanford. Add a course page or photo in <code>assets/experience/</code> when you have one.</p>
+            </div>
+          </div>
+
+          <div class="exp-row">
+            <span class="exp-label">Research</span>
+            <p class="exp-names">
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-tpa" data-pop="pop-tpa">Ashby Monk</button>;
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-seamless" data-pop="pop-seamless">Seamless Bay Area</button>;
+              <button type="button" class="exp-chip" aria-expanded="false" aria-controls="pop-cs152" data-pop="pop-cs152">CS 152</button>
+            </p>
+            <div class="pop" id="pop-tpa" hidden>
+              <p>Independent study with Ashby Monk on how large funds are organized. CEE&nbsp;199L.</p>
+              <ul class="pop-links">
+                <li>
+                  <a href="assets/research/tpa-paper.pdf">
+                    Understanding the Total Portfolio Approach in Institutional Investing (PDF)
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="pop" id="pop-seamless" hidden>
+              <p>Work connected to a unified Bay Area transit network. No paper file found on disk.</p>
+              <ul class="pop-links">
+                <li><a href="https://www.seamlessbayarea.org">seamlessbayarea.org</a></li>
+              </ul>
+            </div>
+            <div class="pop" id="pop-cs152" hidden>
+              <p>Stanford CS 152 class poster: Preventing Cryptocurrency Scams through Automated and Manual Moderation.</p>
+              <ul class="pop-links">
+                <li><a href="assets/research/cs152-poster.pdf">Poster (PDF)</a></li>
+              </ul>
+              <figure class="pop-figure">
+                <img
+                  src="assets/research/cs152-poster.jpg"
+                  alt="CS 152 poster: Preventing Cryptocurrency Scams through Automated and Manual Moderation. Group includes Yosief Abraham."
+                />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block" id="about" aria-labelledby="about-title">
+        <h2 id="about-title">About</h2>
+        <div class="about">
+          <p>
+            Stanford: B.S. Civil Engineering, M.S. Computer Science. I care about
+            systems that last — infrastructure, software, and how capital moves
+            through both.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer wrap">
+      <a href="mailto:yabraham@stanford.edu">yabraham@stanford.edu</a>
+      <a class="archive" href="/2025">2025</a>
+    </footer>
+    <script src="popover.js?v=17" defer></script>
+  </body>
+</html>

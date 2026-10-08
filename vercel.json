@@ -1,10 +1,14 @@
 {
-  "buildCommand": "npm run build:vercel",
-  "outputDirectory": "dist/public",
-  "installCommand": "npm install",
   "framework": null,
+  "installCommand": "npm install",
+  "buildCommand": "npm run build:2025",
+  "outputDirectory": ".",
   "rewrites": [
-    { "source": "/api/:path*", "destination": "/api/index.js" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/images/:path*", "destination": "/2025/images/:path*" },
+    { "source": "/uploads/:path*", "destination": "/2025/uploads/:path*" },
+    { "source": "/2025", "destination": "/2025/index.html" },
+    { "source": "/2025/", "destination": "/2025/index.html" },
+    { "source": "/2025/gallery", "destination": "/2025/index.html" },
+    { "source": "/2025/gallery/", "destination": "/2025/index.html" }
   ]
 }

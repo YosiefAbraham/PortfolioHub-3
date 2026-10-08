@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Breakthrough Ventures Logo - Simplified cartoon version - ENLARGED & MORE VIBRANT -->
+  <rect width="400" height="400" fill="transparent"/>
+  
+  <!-- Breaking through wall effect - BIGGER -->
+  <g transform="translate(200, 200) scale(1.5)">
+    <!-- Wall pieces -->
+    <rect x="-90" y="-40" width="70" height="80" fill="#4A90E2" opacity="0.4" rx="5"/>
+    <rect x="20" y="-40" width="70" height="80" fill="#4A90E2" opacity="0.4" rx="5"/>
+    <polygon points="-70,-50 -20,-70 -20,-40" fill="#4A90E2" opacity="0.3"/>
+    <polygon points="70,-50 20,-70 20,-40" fill="#4A90E2" opacity="0.3"/>
+    
+    <!-- Central breakthrough symbol - upward arrow/rocket - BIGGER -->
+    <g transform="translate(0, -5)">
+      <!-- Rocket body -->
+      <rect x="-18" y="-35" width="36" height="70" rx="10" fill="#FF6B35"/>
+      <!-- Rocket tip -->
+      <polygon points="0,-60 -25,-35 25,-35" fill="#FF6B35"/>
+      <!-- Window -->
+      <circle cx="0" cy="-12" r="10" fill="#FFE66D"/>
+      <!-- Flames -->
+      <path d="M -12 35 Q -18 52, -10 65 Q -6 58, 0 52 Q 6 58, 10 65 Q 18 52, 12 35" fill="#FFB900"/>
+    </g>
+  </g>
+</svg>

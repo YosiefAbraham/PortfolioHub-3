@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- HDR Engineering - Simplified cartoon version - ENLARGED & MORE VIBRANT -->
+  <rect width="400" height="400" fill="transparent"/>
+  
+  <!-- HDR Text in bold, clean typography - BIGGER -->
+  <text x="200" y="240" font-family="Arial, sans-serif" font-size="140" font-weight="900" fill="#0073E6" text-anchor="middle">HDR</text>
+  
+  <!-- Bridge icon above text - BIGGER -->
+  <g transform="translate(200, 100)">
+    <path d="M -80 0 Q -80 -25, -55 -25 L -25 -25 L -25 0 M -25 0 Q -25 -40, 0 -40 Q 25 -40, 25 0 M 25 0 L 25 -25 L 55 -25 Q 80 -25, 80 0" 
+          stroke="#00D863" stroke-width="6" fill="none" stroke-linecap="round"/>
+    <line x1="-80" y1="0" x2="80" y2="0" stroke="#00D863" stroke-width="5"/>
+  </g>
+</svg>

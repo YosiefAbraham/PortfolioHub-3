@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Embedding VC Logo - Simplified cartoon version - ENLARGED & MORE VIBRANT -->
+  <rect width="400" height="400" fill="transparent"/>
+  
+  <!-- Network/embedding visualization - BIGGER -->
+  <g transform="translate(200, 200) scale(1.5)">
+    <!-- Nodes - BIGGER -->
+    <circle cx="0" cy="-70" r="16" fill="#7C3AED"/>
+    <circle cx="-70" cy="0" r="16" fill="#7C3AED"/>
+    <circle cx="70" cy="0" r="16" fill="#7C3AED"/>
+    <circle cx="-45" cy="60" r="16" fill="#7C3AED"/>
+    <circle cx="45" cy="60" r="16" fill="#7C3AED"/>
+    <circle cx="0" cy="20" r="22" fill="#A78BFA"/>
+    
+    <!-- Connections - THICKER -->
+    <line x1="0" y1="-70" x2="-70" y2="0" stroke="#7C3AED" stroke-width="5" opacity="0.7"/>
+    <line x1="0" y1="-70" x2="70" y2="0" stroke="#7C3AED" stroke-width="5" opacity="0.7"/>
+    <line x1="-70" y1="0" x2="0" y2="20" stroke="#7C3AED" stroke-width="5" opacity="0.7"/>
+    <line x1="70" y1="0" x2="0" y2="20" stroke="#7C3AED" stroke-width="5" opacity="0.7"/>
+    <line x1="0" y1="20" x2="-45" y2="60" stroke="#7C3AED" stroke-width="5" opacity="0.7"/>
+    <line x1="0" y1="20" x2="45" y2="60" stroke="#7C3AED" stroke-width="5" opacity="0.7"/>
+    <line x1="-70" y1="0" x2="-45" y2="60" stroke="#7C3AED" stroke-width="3" opacity="0.5"/>
+    <line x1="70" y1="0" x2="45" y2="60" stroke="#7C3AED" stroke-width="3" opacity="0.5"/>
+    
+    <!-- Center highlight - BIGGER -->
+    <circle cx="0" cy="20" r="12" fill="#FDE047"/>
+  </g>
+</svg>

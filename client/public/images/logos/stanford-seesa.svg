@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Stanford SEESA Logo - Simplified cartoon version - ENLARGED & MORE VIBRANT -->
+  <rect width="400" height="400" fill="transparent"/>
+  
+  <!-- Circle with Ethiopian flag colors - BIGGER -->
+  <circle cx="200" cy="200" r="120" fill="#00B050"/>
+  <circle cx="200" cy="200" r="90" fill="#FFD500"/>
+  <circle cx="200" cy="200" r="60" fill="#FF0000"/>
+  
+  <!-- Star in center - BIGGER -->
+  <g transform="translate(200, 200) scale(1.5)">
+    <path d="M 0 -15 L 4 -5 L 15 -5 L 6 2 L 10 13 L 0 6 L -10 13 L -6 2 L -15 -5 L -4 -5 Z" 
+          fill="#FFD500"/>
+  </g>
+</svg>

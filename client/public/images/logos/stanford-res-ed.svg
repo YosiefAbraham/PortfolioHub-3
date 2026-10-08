@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Stanford ResEd Logo - Simplified cartoon version - ENLARGED & MORE VIBRANT -->
+  <rect width="400" height="400" fill="transparent"/>
+  
+  <!-- House/building shape representing residential education - BIGGER -->
+  <g transform="translate(200, 200) scale(1.5)">
+    <!-- Roof -->
+    <path d="M 0 -80 L -70 -20 L 70 -20 Z" fill="#C41E3A"/>
+    
+    <!-- House body -->
+    <rect x="-60" y="-20" width="120" height="100" rx="5" fill="#C41E3A"/>
+    
+    <!-- Door -->
+    <rect x="-20" y="20" width="40" height="60" rx="3" fill="white"/>
+    
+    <!-- Windows -->
+    <rect x="-50" y="0" width="25" height="25" rx="2" fill="white"/>
+    <rect x="25" y="0" width="25" height="25" rx="2" fill="white"/>
+    
+    <!-- Welcome mat lines -->
+    <line x1="-25" y1="85" x2="25" y2="85" stroke="#2C2C2C" stroke-width="3"/>
+  </g>
+</svg>

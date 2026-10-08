@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- MLT Logo - Simplified cartoon version - ENLARGED & MORE VIBRANT -->
+  <rect width="400" height="400" fill="transparent"/>
+  
+  <!-- MLT letters in bold, modern style - BIGGER -->
+  <text x="200" y="250" font-family="Arial, sans-serif" font-size="130" font-weight="900" fill="#7B2CBF" text-anchor="middle">MLT</text>
+  
+  <!-- Upward arrow/growth symbol - BIGGER -->
+  <g transform="translate(200, 90)">
+    <path d="M 0 0 L -35 35 M 0 0 L 35 35 M 0 0 L 0 70" 
+          stroke="#7B2CBF" stroke-width="12" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+</svg>

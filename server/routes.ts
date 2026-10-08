@@ -35,7 +35,7 @@ function getGalleryImages(): GalleryImage[] {
       })
       .map((file, index) => ({
         id: `img-${index}`,
-        url: `/images/gallery/${file}`,
+        url: `/2025/images/gallery/${file}`,
         alt: file.replace(/\.[^/.]+$/, "").replace(/[-_]/g, " "),
       }));
     

@@ -5,3 +5,7 @@ server/public
 vite.config.ts.*
 *.tar.gz
 .vercel
+yy_push_key
+yy_push_key.pub
+
+

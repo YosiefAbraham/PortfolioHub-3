@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Initio Capital Logo - Simplified cartoon version - ENLARGED & MORE VIBRANT -->
+  <rect width="400" height="400" fill="transparent"/>
+  
+  <!-- Growth/seedling symbol - BIGGER -->
+  <g transform="translate(200, 230) scale(1.5)">
+    <!-- Pot -->
+    <path d="M -40 30 L -50 60 L 50 60 L 40 30 Z" fill="#6B4423"/>
+    <ellipse cx="0" cy="30" rx="45" ry="12" fill="#8B5A3C"/>
+    
+    <!-- Stem -->
+    <path d="M 0 30 Q -12 8, -6 -25 Q 0 -48, 6 -72" 
+          stroke="#2E7D32" stroke-width="8" fill="none" stroke-linecap="round"/>
+    
+    <!-- Leaves - MORE VIBRANT GREEN -->
+    <ellipse cx="-24" cy="0" rx="22" ry="34" fill="#43A047" transform="rotate(-30 -24 0)"/>
+    <ellipse cx="18" cy="-28" rx="22" ry="34" fill="#43A047" transform="rotate(30 18 -28)"/>
+    <ellipse cx="-12" cy="-52" rx="24" ry="36" fill="#66BB6A" transform="rotate(-20 -12 -52)"/>
+    
+    <!-- Upward arrow integrated - BIGGER -->
+    <path d="M 6 -72 L -6 -60 M 6 -72 L 18 -60" 
+          stroke="#66BB6A" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

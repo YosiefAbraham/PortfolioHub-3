@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Stanford Black Rhythm and Sound Logo - Simplified cartoon version - ENLARGED & MORE VIBRANT -->
+  <rect width="400" height="400" fill="transparent"/>
+  
+  <!-- Music note - BIGGER -->
+  <g transform="translate(200, 200) scale(1.6)">
+    <!-- Note stem -->
+    <rect x="25" y="-80" width="10" height="110" rx="3" fill="#1A1A1A"/>
+    
+    <!-- Note head -->
+    <ellipse cx="20" cy="35" rx="32" ry="24" fill="#1A1A1A" transform="rotate(-20 20 35)"/>
+    
+    <!-- Sound waves - MORE VIBRANT RED -->
+    <path d="M -55 -40 Q -45 -52, -32 -40" stroke="#E03C31" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M -68 -18 Q -50 -38, -32 -18" stroke="#E03C31" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M -75 5 Q -52 -20, -32 5" stroke="#E03C31" stroke-width="7" fill="none" stroke-linecap="round"/>
+    
+    <path d="M 67 -40 Q 57 -52, 44 -40" stroke="#E03C31" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M 80 -18 Q 62 -38, 44 -18" stroke="#E03C31" stroke-width="7" fill="none" stroke-linecap="round"/>
+    <path d="M 87 5 Q 64 -20, 44 5" stroke="#E03C31" stroke-width="7" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

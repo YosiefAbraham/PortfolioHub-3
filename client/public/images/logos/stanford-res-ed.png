@@ -1,0 +1,32 @@
+<svg width="400" height="400" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffebee;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ffcdd2;stop-opacity:0.6" />
+    </radialGradient>
+  </defs>
+  
+  <circle cx="200" cy="200" r="190" fill="url(#bg2)"/>
+  
+  <!-- Cozy building -->
+  <rect x="140" y="180" width="120" height="130" rx="5" fill="#8d6e63" opacity="0.8"/>
+  <path d="M 130 180 L 200 130 L 270 180 Z" fill="#b71c1c" opacity="0.85"/>
+  
+  <!-- Windows -->
+  <rect x="160" y="200" width="25" height="30" rx="3" fill="#ffeb3b" opacity="0.7"/>
+  <rect x="215" y="200" width="25" height="30" rx="3" fill="#ffeb3b" opacity="0.7"/>
+  <rect x="160" y="250" width="25" height="30" rx="3" fill="#ffeb3b" opacity="0.7"/>
+  <rect x="215" y="250" width="25" height="30" rx="3" fill="#ffeb3b" opacity="0.7"/>
+  
+  <!-- Door -->
+  <rect x="185" y="260" width="30" height="50" rx="15" ry="0" fill="#5d4037" opacity="0.9"/>
+  
+  <!-- Welcoming tree -->
+  <rect x="280" y="230" width="15" height="80" rx="7" fill="#6d4c41" opacity="0.8"/>
+  <circle cx="287" cy="220" r="40" fill="#66bb6a" opacity="0.7"/>
+  <circle cx="310" cy="210" r="30" fill="#81c784" opacity="0.7"/>
+  <circle cx="265" cy="215" r="35" fill="#81c784" opacity="0.7"/>
+</svg>
+
+
+
