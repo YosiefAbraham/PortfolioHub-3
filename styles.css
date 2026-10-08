@@ -171,6 +171,25 @@ main {
   font-weight: 400;
   letter-spacing: -0.03em;
   line-height: 1.2;
+  min-height: 1.2em;
+}
+
+.hero h1.is-typing::after,
+.hero h1.is-typed::after {
+  content: "";
+  display: inline-block;
+  width: 0.06em;
+  height: 0.82em;
+  margin-left: 0.12em;
+  background: currentColor;
+  vertical-align: -0.04em;
+  animation: caret 0.9s step-end infinite;
+}
+
+@keyframes caret {
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero p {
@@ -494,5 +513,11 @@ a.work:hover strong,
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+
+  .hero h1.is-typing::after,
+  .hero h1.is-typed::after {
+    display: none;
+    animation: none;
   }
 }
