@@ -174,25 +174,57 @@ main {
   line-height: 1.65;
 }
 
-.hero-photo {
+.hero-photo-wrap {
+  position: relative;
   flex: 0 0 10.5rem;
+  width: 10.5rem;
+  height: 10.5rem;
+  transform-origin: 50% 90%;
+  animation: photo-tilt 4.8s ease-in-out infinite;
+}
+
+.hero-photo {
+  display: block;
   width: 10.5rem;
   height: 10.5rem;
   object-fit: contain;
   object-position: center bottom;
   border-radius: 2px;
-  transform-origin: 50% 80%;
-  animation: photo-bob 4.6s ease-in-out infinite;
 }
 
-@keyframes photo-bob {
+.hero-photo-smile {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  animation: photo-smile 4.8s ease-in-out infinite;
+}
+
+@keyframes photo-tilt {
   0%,
   100% {
-    transform: translateY(0) rotate(-0.6deg);
+    transform: rotate(-3deg);
   }
 
   50% {
-    transform: translateY(-4px) rotate(0.6deg);
+    transform: rotate(7deg);
+  }
+
+}
+
+@keyframes photo-smile {
+  0%,
+  28% {
+    opacity: 0;
+  }
+
+  42%,
+  58% {
+    opacity: 1;
+  }
+
+  72%,
+  100% {
+    opacity: 0;
   }
 }
 
@@ -459,6 +491,7 @@ a.work:hover strong,
     padding-top: 2.25rem;
   }
 
+  .hero-photo-wrap,
   .hero-photo {
     flex-basis: 7.5rem;
     width: 7.5rem;
@@ -476,7 +509,12 @@ a.work:hover strong,
     scroll-behavior: auto;
   }
 
-  .hero-photo {
+  .hero-photo-wrap,
+  .hero-photo-smile {
     animation: none;
+  }
+
+  .hero-photo-smile {
+    opacity: 0;
   }
 }
