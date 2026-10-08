@@ -381,6 +381,13 @@ a.work:hover strong,
   font-size: 0.9375rem;
 }
 
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0 1.25rem;
+}
+
 .site-footer a {
   display: inline-flex;
   align-items: center;
