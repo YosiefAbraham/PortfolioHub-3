@@ -65,7 +65,7 @@ dd {
 }
 
 .wrap {
-  width: min(38rem, calc(100% - 48px));
+  width: min(44rem, calc(100% - 48px));
   margin-inline: auto;
 }
 
@@ -146,7 +146,16 @@ main {
 }
 
 .hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.25rem 1.5rem;
   padding: 3.5rem 0 2.75rem;
+}
+
+.hero-copy {
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 .hero h1 {
@@ -163,6 +172,15 @@ main {
   color: var(--muted);
   font-size: 1.0625rem;
   line-height: 1.65;
+}
+
+.hero-photo {
+  flex: 0 0 10.5rem;
+  width: 10.5rem;
+  height: 10.5rem;
+  object-fit: cover;
+  object-position: center 22%;
+  border-radius: 2px;
 }
 
 .block {
@@ -408,7 +426,7 @@ a.work:hover strong,
 
 @media (max-width: 640px) {
   .wrap {
-    width: min(38rem, calc(100% - 32px));
+    width: min(44rem, calc(100% - 32px));
   }
 
   .site-header .wrap {
@@ -424,7 +442,14 @@ a.work:hover strong,
   }
 
   .hero {
+    flex-direction: column;
     padding-top: 2.25rem;
+  }
+
+  .hero-photo {
+    flex-basis: 7.5rem;
+    width: 7.5rem;
+    height: 7.5rem;
   }
 
   .exp-row {
